@@ -19,23 +19,33 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ### 📈 GitHub Stats
 
-![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical)
+![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=developersharifuddin&show_icons=true&theme=radical)
 
 ### 🔗 Connect with Me
 
 - **LinkedIn**: [Sharif Uddin](https://www.linkedin.com/in/md-sharif-uddin)
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **Twitter**: [@md-sharif-uddin](https://www.linkedin.com/in/md-sharif-uddin)
 - **Facebook**: [facebook](https://www.facebook.com/sharif9977)
 - **Dribble**: [dribble](https://dribbble.com/sharif-uddin)
 
 ### 💡 Tech Stack & Tools
 
-- **Languages**: PHP, JavaScript, HTML5, CSS3
+- **Languages**: PHP, C, C++, C#, Java, JavaScript, HTML5, CSS3, Bootstrap5, Tailwind CSS
 - **Frameworks**: Laravel, Vue.js, Nuxt.js
+- **Front-end Technologies**: HTML5, CSS3, Bootstrap-5, Tailwind CSS, JavaScript,Vue.Js, Nuxt.Js
+- **Back-end Technologies**: PHP/Laravel
 - **Databases**: MySQL, MS-SQL
 - **Cloud**: AWS S3
 - **Version Control**: Git, GitHub
 - **DevOps**: CI/CD, GitHub Actions
+- **API Development**: Laravel Sanctum, Passport 
+- **API Testing**: Postman 
+- **Version Control**: Git 
+- **Collaboration**: Redmine 
+- **Design**: Adobe XD(UI/UX Design), Visio Studio(DFD Design). 
+- **Quality**: Testing(Manual). 
+- **Project Management**: Requirement Analysis, Documentations, SRS, Table design, Client Handling. 
+- **Others**: Microsoft office.
 
 ---
 
