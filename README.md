@@ -13,7 +13,23 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ### 🌟 Featured Projects
 
-- **[Project Name 1](link-to-repo)**: Brief description, focusing on the technologies and impact.
+- **[BooksBD](link-to-repo)**: BooksBD
+        **Brief Description**: BooksBD is an multivendor e-commerce project like
+        rokomary.com. BooksBD buys books from publishers and sells them to
+        customers. There are six types of users in the BooksBD system. Admin,
+        Manager, Publisher, Book collector-employee, Book entry employee, Courier
+        and Customer. This Project has 5 parts, Application setting, Company setting,
+        Orders Management, Inventory, Commercials and reports.
+        **Technologies**: PHP, Laravel, Vue.js, Database: MySQL.
+        **Role/Responsibilities**: I work as a team on the BooksBD project. Here I
+        work on Front-end in design and development, back end development, UIUX
+        design, Table design, SRS create, Project management and Client Handling.
+        Achievements
+        ● Successfully Front-end and Back-end development by Laravel & Vue.Js.
+        ● Successfully System Design, Database Design, UI/UX Design and Development.
+        ● Successfully Team Management and Client Handling.
+        **Repository**: APIs Project | GUI Project
+        
 - **[Project Name 2](link-to-repo)**: Brief description, highlighting key achievements.
 - **[Project Name 3](link-to-repo)**: Brief description, emphasizing the technologies used.
 
