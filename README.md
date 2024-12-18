@@ -35,9 +35,10 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ### 📈 GitHub Stats
 
-![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=developersharifuddin&show_icons=true&theme=radical)
+![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=developersharifuddin&show_icons=true&theme=radical&cache_seconds=60)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=developersharifuddin&layout=compact&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=developersharifuddin&layout=compact&theme=radical&cache_seconds=60)
+
 
 ---
 
