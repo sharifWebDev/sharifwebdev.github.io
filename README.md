@@ -37,6 +37,28 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=developersharifuddin&show_icons=true&theme=radical)
 
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=developersharifuddin&layout=compact&theme=radical)
+
+---
+
+### 🚀 Contribution Streak
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=developersharifuddin&theme=radical)](https://git.io/streak-stats)
+
+---
+
+### 🌟 Highlighted Repositories
+
+- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=developersharifuddin&repo=your-repo-name&theme=radical)](https://github.com/developersharifuddin/your-repo-name)
+- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=developersharifuddin&repo=another-repo-name&theme=radical)](https://github.com/developersharifuddin/another-repo-name)
+
+---
+
+### 🏆 GitHub Achievements
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=developersharifuddin&theme=radical&row=1)](https://github.com/developersharifuddin)
+
+
 ### 🔗 Connect with Me
 
 - **LinkedIn**: [Sharif Uddin](https://www.linkedin.com/in/md-sharif-uddin)
