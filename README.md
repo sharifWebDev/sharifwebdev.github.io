@@ -29,9 +29,9 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
         ● Successfully System Design, Database Design, UI/UX Design and Development.
         ● Successfully Team Management and Client Handling.
         **Repository**: APIs Project | GUI Project
-        
-- **[Project Name 2](link-to-repo)**: Brief description, highlighting key achievements.
-- **[Project Name 3](link-to-repo)**: Brief description, emphasizing the technologies used.
+
+
+         
 
 ### 📈 GitHub Stats
 
@@ -45,19 +45,48 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 ### 🚀 Contribution Streak
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=developersharifuddin&theme=radical)](https://git.io/streak-stats)
-
----
-
-### 🌟 Highlighted Repositories
-
-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=developersharifuddin&repo=your-repo-name&theme=radical)](https://github.com/developersharifuddin/your-repo-name)
-- [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=developersharifuddin&repo=another-repo-name&theme=radical)](https://github.com/developersharifuddin/another-repo-name)
-
+ 
 ---
 
 ### 🏆 GitHub Achievements
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=developersharifuddin&theme=radical&row=1)](https://github.com/developersharifuddin)
+
+ 
+## 🚀 Contribution Graph
+![GitHub Contributions](https://github-readme-activity-graph.cyclic.app/graph?username=sharifuddin9977&theme=radical)
+
+---
+
+## 🏆 GitHub Trophies
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sharifuddin9977&theme=radical&margin-w=15&margin-h=15)
+
+---
+
+## 🔥 Streak Stats
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=sharifuddin9977&theme=radical)
+
+---
+
+## 📊 Top Languages
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifuddin9977&layout=compact&theme=radical)
+
+---  
+
+## ⚡ Dynamic Widgets and Features
+
+### 🗂️ Repository Overview
+![Sharif's Repositories](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sharifuddin9977&theme=radical)
+![Commits](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sharifuddin9977&theme=radical)
+
+### 🏅 Achievements
+- **Contributed to 50+ open-source projects**
+- **Maintainer of 10+ repositories**
+- **Top 5% contributor on GitHub**
+
+--- 
+
+
 
 
 ### 🔗 Connect with Me
