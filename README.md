@@ -39,11 +39,6 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
  
 ---
 
-### 🏆 GitHub Achievements
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=sharifWebDev&theme=radical&row=1)](https://github.com/sharifWebDev)
-
-
 ## 📊 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifWebDev&layout=compact&theme=radical)
 
@@ -55,7 +50,11 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 ![Sharif's Repositories](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sharifWebDev&theme=radical)
 ![Commits](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sharifWebDev&theme=radical)
 
-### 🏅 Achievements
+
+### 🏆 Achievements
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=sharifWebDev&theme=radical&row=1)](https://github.com/sharifWebDev)
+
 - **Contributed to 50+ open-source projects**
 - **Maintainer of 10+ repositories**
 - **Top 5% contributor on GitHub**
