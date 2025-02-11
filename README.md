@@ -44,40 +44,40 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ### 🚀 Contribution Streak
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=developersharifuddin&theme=radical)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=sharifWebDev&theme=radical)](https://git.io/streak-stats)
  
 ---
 
 ### 🏆 GitHub Achievements
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=developersharifuddin&theme=radical&row=1)](https://github.com/developersharifuddin)
+[![trophy](https://github-profile-trophy.vercel.app/?username=developersharifuddin&theme=radical&row=1)](https://github.com/sharifWebDev)
 
  
 ## 🚀 Contribution Graph
-![GitHub Contributions](https://github-readme-activity-graph.cyclic.app/graph?username=sharifuddin9977&theme=radical)
+![GitHub Contributions](https://github-readme-activity-graph.cyclic.app/graph?username=sharifWebDev&theme=radical)
 
 ---
 
 ## 🏆 GitHub Trophies
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sharifuddin9977&theme=radical&margin-w=15&margin-h=15)
+![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sharifWebDev&theme=radical&margin-w=15&margin-h=15)
 
 ---
 
 ## 🔥 Streak Stats
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=sharifuddin9977&theme=radical)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=sharifWebDev&theme=radical)
 
 ---
 
 ## 📊 Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifuddin9977&layout=compact&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifWebDev&layout=compact&theme=radical)
 
 ---  
 
 ## ⚡ Dynamic Widgets and Features
 
 ### 🗂️ Repository Overview
-![Sharif's Repositories](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sharifuddin9977&theme=radical)
-![Commits](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sharifuddin9977&theme=radical)
+![Sharif's Repositories](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sharifWebDev&theme=radical)
+![Commits](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sharifWebDev&theme=radical)
 
 ### 🏅 Achievements
 - **Contributed to 50+ open-source projects**
