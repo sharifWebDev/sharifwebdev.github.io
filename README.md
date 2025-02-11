@@ -31,16 +31,7 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
         **Repository**: APIs Project | GUI Project
 
 
-         
 
-### 📈 GitHub Stats
-
-![Sharif's GitHub stats](https://github-readme-stats.vercel.app/api?username=sharifWebDev&show_icons=true&theme=radical&cache_seconds=60)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifWebDev&layout=compact&theme=radical&cache_seconds=60)
-
-
----
 
 ### 🚀 Contribution Streak
 
@@ -50,23 +41,8 @@ Welcome to my GitHub profile! I’m a passionate full-stack developer with exper
 
 ### 🏆 GitHub Achievements
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=developersharifuddin&theme=radical&row=1)](https://github.com/sharifWebDev)
+[![trophy](https://github-profile-trophy.vercel.app/?username=sharifWebDev&theme=radical&row=1)](https://github.com/sharifWebDev)
 
- 
-## 🚀 Contribution Graph
-![GitHub Contributions](https://github-readme-activity-graph.cyclic.app/graph?username=sharifWebDev&theme=radical)
-
----
-
-## 🏆 GitHub Trophies
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=sharifWebDev&theme=radical&margin-w=15&margin-h=15)
-
----
-
-## 🔥 Streak Stats
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=sharifWebDev&theme=radical)
-
----
 
 ## 📊 Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sharifWebDev&layout=compact&theme=radical)
