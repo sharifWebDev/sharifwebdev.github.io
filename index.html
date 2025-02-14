@@ -95,22 +95,14 @@
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
-                    </div>
-                    <script>
-                        function myFunction(x) {
-                            x.classList.toggle("change");
-                        }
-                    </script>
+                    </div> 
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-sm-start" id="navbarCollapse">
-
                     <ul class="navbar-nav nav-pills mb-2 mb-md-0 ml-0" id="navbar-nav1" role="tablist">
-                        <li class="nav-item px-lg-2 hover-border"> <a class="nav-link scrollto"
-                                href="#page-cover">Home</a> </li>
+                        <li class="nav-item px-lg-2 hover-border"> <a class="nav-link scrollto" href="#page-cover">Home</a> </li>
                         <li class="nav-item px-lg-2 hover-border"> <a class="nav-link" href="#about">About</a> </li>
-                        <li class="nav-item px-lg-2 hover-border"> <a class="nav-link" href="#protfollio">Protfollio</a>
-                        </li>
+                        <li class="nav-item px-lg-2 hover-border"> <a class="nav-link" href="#protfollio">Protfollio</a></li>
                         <li class="nav-item px-3 hover-border"> <a class="nav-link" href="#contact">Contact</a> </li>
                     </ul>
 
@@ -120,34 +112,25 @@
                                     class="bi bi-facebook"></i></a> </li>
                         <li class="nav-item"><a class="nav-link" href="callto:(+880) 1965674161"> <i
                                     class="bi bi-whatsapp"></i></a></li>
-                        <li class="nav-item"><a class="nav-link"  href="mailto:sharif.uddin.9977@gmail.com"> <i
+                        <li class="nav-item"><a class="nav-link" href="mailto:sharif.uddin.9977@gmail.com"> <i
                                     class="bi bi-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-
-
-        <div class="parallax" id="page-cover" data-z-index="2" data-parallax="scroll"
-            data-image-src="./assets/images/body-bg.webp">
-
-            <div class="info"
-                style="background-color: rgba(253, 253, 253,0); background-image:linear-gradient(90deg, rgba(9, 8, 80, .005) 35%,rgba(58, 58, 97, 0) 85%); background-position: right top;background-repeat: no-repeat;border-width: 0px 0px 0px 0px;border-color:#eae9e9; background-size:cover;">
-
+        <div class="parallax" id="page-cover" data-z-index="2" data-parallax="scroll" data-image-src="./assets/images/body-bg.webp">
+            <div class="info" style="background-color: rgba(253, 253, 253,0); background-image:linear-gradient(90deg, rgba(9, 8, 80, .005) 35%,rgba(58, 58, 97, 0) 85%); background-position: right top;background-repeat: no-repeat;border-width: 0px 0px 0px 0px;border-color:#eae9e9; background-size:cover;">
                 <!-- start testimonial-->
                 <div class="container" id="page-cover-container">
                     <div class="row g-0">
-
                         <div class="col-lg-8 col-md-7 col-sm-12 mt-5">
                             <div class="card-body mx-auto px-0">
-                                <h6 class="text-dark my-4"><span
-                                        style="background:rgb(184, 163, 109, 0.4); padding: 8px 20px; border-radius: 15px 15px 15px 0; color: white;">Welcome!</span>
+                                <h6 class="text-dark my-4"><span style="background:rgb(184, 163, 109, 0.4); padding: 8px 20px; border-radius: 15px 15px 15px 0; color: white;">Welcome!</span>
                                 </h6>
                                 <h5 class="card-title mb-5">
                                     <span> Sharif Uddin </span>
                                 </h5>
-
 
                                 <span class="text-slider">
                                     <h1 class="m-0 p-0 w-100">
@@ -161,65 +144,46 @@
                                 </span>
 
 
-                                <div class="information" id="banner-info" style="margin-top: 25vh;">
+                                <div class="information" id="banner-info" style="margin-top: 12vh;">
                                     <p class="actionbutton">
                                         <span class="cv"> <a href="/downloadCv">
-                                            <button class="btn btn-lg getcvbutton">
-                                                    <i class="bi bi-file-earmark-text"></i> Download CV <i class="bi bi-download"></i>
+                                                <button class="btn btn-lg getcvbutton">
+                                                    <i class="bi bi-file-earmark-text"></i> Download CV <i
+                                                        class="bi bi-download"></i>
                                                 </button>
                                             </a></span>
                                     </p>
-                                    <script>
-                                        document.addEventListener("DOMContentLoaded", function () {
-                                            const downloadButton = document.querySelector(".getcvbutton");
-
-                                            if (downloadButton) {
-                                                downloadButton.addEventListener("click", function (event) {
-                                                    event.preventDefault();
-                                                    const cvUrl = "./Laravel-Developer-Resume-V-3.0-of-Sharif-Uddin-Jan-2025.pdf";
-
-                                                    const link = document.createElement("a");
-                                                    link.href = cvUrl;
-                                                    link.setAttribute("download", "CV.pdf");
-                                                    document.body.appendChild(link);
-                                                    link.click();
-                                                    document.body.removeChild(link);
-                                                });
-                                            }
-                                        }); 
-                                    </script>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-5" id="bannerRight">
-                            <div class="bannerRightItem ">
+                        <div class="col-lg-3 col-md-4 mt-5"> 
                                 <div class="card-body m-auto d-none d-sm-none d-md-block">
                                     <img src="./assets/img/hero-img.svg" height="300PX" alt="">
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+                 <!-- start swipper slider-->
+                <div class="clients section-bg py-4 m-0 mb-0 bg-transparent" id="clients">
+                    <div class="container" data-aos="fade-up">
+                        <div class="clients-slider swiper-container py-2 my-auto">
+                            <div class="swiper-wrapper align-items-center bg-whitemy-auto" id="swiper-wrapper">
+                                <div class="swiper-slide my-auto"><img src="./assets/logo/Stack_Overflow.svg.png"
+                                        class="img-fluid pt-4" alt="Stack_Overflow"></div>
+                                <div class="swiper-slide"><img src="./assets/logo/github.png" class="img-fluid" alt="github">
                                 </div>
+                                <div class="swiper-slide"><img src="./assets/logo/Linkedin.png" class="img-fluid"
+                                        alt="Linkedin"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!--end swipper slider-->
             </div>
         </div>
 
-        <!-- start swipper slider-->
-        <div class="container-fluid clients section-bg py-4 m-auto mb-0 bg-transparent border-bottom" id="clients">
-            <div class="container" data-aos="fade-up">
-                <div class="clients-slider swiper-container py-2 my-auto">
-                    <div class="swiper-wrapper align-items-center bg-whitemy-auto" id="swiper-wrapper">
-                        <div class="swiper-slide my-auto"><img src="./assets/logo/Stack_Overflow.svg.png" class="img-fluid pt-4"
-                                alt="Stack_Overflow"></div>
-                        <div class="swiper-slide"><img src="./assets/logo/github.png" class="img-fluid" alt="github">
-                        </div>
-                        <div class="swiper-slide"><img src="./assets/logo/Linkedin.png" class="img-fluid"
-                                alt="Linkedin"></div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-        <!--end swipper slider-->
+       
 
 
         <section id="about" class="about-section pt-4">
@@ -289,55 +253,13 @@
             </div>
         </section>
 
-        <!-- start about-->
-        <div class="container-fluid d-none" id="about">
-            <div class="container py-5  py-lg-5">
-                <div class="card mb-3 border-0" style="max-width:1400px;">
-
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-6">
-                            <img src="./assets/img/about-us.png" height="100%" class="img-fluid rounded-start"
-                                alt="Sharif uddin">
-                        </div>
-
-                        <div class="col-md-6 col-lg-5 px-lg-3">
-                            <div class="card-body mx-auto">
-
-                                <h5 class="card-title mb-4"
-                                    style="font-size: 2.6rem; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
-                                    LET’S <br> INTRODUCE ABOUT <br> MYSELF</h5>
-
-                                <p class="card-text" style="color:rgb(68, 78, 78);">Whose given. Were gathered. There
-                                    first subdue greater. Bearing you Whales heaven midst their. Beast creepeth. Fish
-                                    days. </p>
-                                <p>Is give may shall likeness made yielding spirit a itself together created after sea
-                                    is in beast beginning signs open god you're gathering whose gathered cattle let.
-                                    Creature whales fruit unto meat the life beginning all in under give two.</p>
-                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett, Envato Ceo</small>
-                                </p>
-                                <button class="btn btn-info btn-lg btn-rounded mb-3 text-white p-3 px-4"
-                                    style="background: rgb(3, 77, 77); border-radius: 50px;">DOWNLOAD CV <i
-                                        class="bi bi-chevron-right"></i></button>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--end about-->
-
-
         <!-- protfollio -->
 
-        <div class="container" id="protfollio">
-
+        <div class="container mt-5 pt-5" id="protfollio">
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-6 text-center">
                     <h2 class="insurence mt-5" style="font-size: 35px; color: rgb(4, 87, 87);">Protfollio</h2>
-                    <h5 class="details" style="color: rgb(5, 28, 94);">Working With Team.</h5>
+                    <h6 class="details" style="color: rgb(5, 28, 94);">Working With Team.</h6>
                 </div>
             </div>
 
@@ -393,43 +315,146 @@
             </div>
         </div>
 
-        <div class="container-flex" style="background: #cff5fa;">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-5 col-lg-6">
-                        <img src="./assets/img/hero.png" height="100%" class="img-fluid rounded-start"
-                            alt="SEO; Search Engine Optimization">
-                    </div>
 
-                    <div class="col-md-7 col-lg-6 my-auto px-md-5">
-                        <div class="card-body m-auto">
-                            <span class="py-2 px-3 bg-light my-3" style="border-radius: 50px;">Free Consultation</span>
-                            <h5 class="card-title mb-2 mt-3 display-5"
-                                style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
-                                Full Stack<br>Web Development.</h5>
+        <!-- start testimonial slider-->
+        <div class="container-fluid">
+            <div class="container py-md-5">
+                <div class="card mb-3 border-0 mx-lg-5">
 
-                            <p class="card-text" style="color:rgb(36, 68, 68);">Holistic development and support for
-                                employees the aim of being a first-choice.</p>
-                            <p class="card-text mb-4 fs-5"><i class="bi bi-check fs-5 bg-light text-info"
-                                    style="border-radius: 50%;"></i> Error handaling</p>
-                            <p class="card-text mb-4 fs-5"><i class="bi bi-check fs-5 bg-light text-info"
-                                    style="border-radius: 50%;"></i> On page SEO</p>
-                            <p class="card-text mb-4 fs-5"><i class="bi bi-check fs-5 bg-light text-info"
-                                    style="border-radius: 50%;"></i> Best perfomence</p>
-
+                    <div class="row g-0 justify-content-between">
+                        <div class="col-md-5 col-lg-5">
+                            <img src="./assets/img/hero.png" height="70%" class="img-fluid rounded-start"
+                                alt="Web Developer">
                         </div>
+
+                        <div class="col-md-7 col-lg-6 my-auto px-lg-5">
+                            <div class="mx-auto">
+                                <div id="carouselExampleDark" class="carousel carousel-dark slide p-0 m-0"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner m-auto p-0" style="min-height: 350px;">
+
+                                        <div class="carousel-item " data-bs-interval="10000" style="height: 350px;">
+                                            <div class="card-body m-auto">
+
+                                                <h5 class="card-title mb-4 h2"
+                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
+                                                    Full stack Web development</h5>
+
+                                                <p class="card-text" style="color:rgb(36, 68, 68);">Holistic development
+                                                    and support for
+                                                    employees the aim of being a first-choice.</p>
+                                                <p class="card-text mb-2 fs-6"><i
+                                                        class="bi bi-check fs-6 bg-light text-info"
+                                                        style="border-radius: 50%;"></i> Error handaling</p>
+                                                <p class="card-text mb-2 fs-6"><i
+                                                        class="bi bi-check fs-6 bg-light text-info"
+                                                        style="border-radius: 50%;"></i> On page SEO</p>
+                                                <p class="card-text mb-2 fs-6"><i
+                                                        class="bi bi-check fs-6 bg-light text-info"
+                                                        style="border-radius: 50%;"></i> Best perfomence</p>
+                                                <a class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
+                                                    href="https://www.linkedin.com/in/md-sharif-uddin/"
+                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">Request a
+                                                    Quote <i class="bi bi-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item active " data-bs-interval="10000"
+                                            style="height: 350px;">
+                                            <div class="card-body mx-auto">
+
+                                                <h5 class="card-title mb-4 h2"
+                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
+                                                    Web development</h5>
+
+                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
+                                                    develop successful Digital
+                                                    ideas and strategies that engage and convert significant, trageted
+                                                    traffic develop successful Digital
+                                                    ideas and strategies that engage and convert.</p>
+                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
+                                                        Envato Ceo</small></p>
+                                                <a class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
+                                                    href="https://www.linkedin.com/in/md-sharif-uddin/"
+                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">Request a
+                                                    Quote <i class="bi bi-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item" data-bs-interval="10000" style="height: 350px;">
+                                            <div class="card-body mx-auto">
+
+                                                <h5 class="card-title mb-4 h2"
+                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
+                                                    web design</h5>
+
+                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
+                                                    develop successful Digital
+                                                    ideas and strategies that engage and convert significant, trageted
+                                                    traffic develop successful Digital
+                                                    ideas and strategies that engage and convert.</p>
+                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
+                                                        Envato Ceo</small></p>
+                                                <a class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
+                                                    href="https://www.linkedin.com/in/md-sharif-uddin/"
+                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">Request a
+                                                    Quote <i class="bi bi-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item" data-bs-interval="10000" style="height: 350px;">
+                                            <div class="card-body mx-auto">
+
+                                                <h5 class="card-title mb-4 h2"
+                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
+                                                    SEO</h5>
+
+                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
+                                                    develop successful Digital
+                                                    ideas and strategies that engage and convert significant, trageted
+                                                    traffic develop successful Digital
+                                                    ideas and strategies that engage and convert.</p>
+                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
+                                                        Envato Ceo</small></p>
+                                                <a class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
+                                                    href="https://www.linkedin.com/in/md-sharif-uddin/"
+                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">Request a
+                                                    Quote <i class="bi bi-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="carousel-indicators" style="bottom: 0;">
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--end testimonial-->
 
-        <!-- start testimonial-->
-        <div class="container-fluid my-5">
-            <div class="container py-5  py-lg-5">
-                <div class="card mb-3 border-0 mx-lg-5" style="max-width:1400px;">
-                    <div class="row g-0 justify-content-center">
-                        <div class="col-md-6 col-lg-4">
+        <!-- start carusol-->
+
+        <div id="carouselExampleCaptions my-5">
+            <div class="parallax w-100 my-auto" data-z-index="2" data-parallax="scroll" style="background-image: url('./assets/images/body-bg.webp'); background-attachment: fixed;
+                    background-position: center; background-repeat: no-repeat; background-size: cover;">
+                <div class="my-auto container justify-content-center">
+                    <div class="row g-0 justify-content-center my-auto py-5">
+                        <div class="col-md-6 col-lg-5">
                             <div class="row gap-2">
                                 <div class="col text-center " data-aos="fade-up" data-aos-delay="100">
                                     <div class="card h-100 bg-light">
@@ -459,12 +484,12 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-6 px-2 mt-3" style="z-index:5">
+                        <div class="col-md-6 col-lg-6 mt-3" style="z-index:5">
                             <div class="row align-items-center justify-content-center">
                                 <div class="col-sm-6 text-end">
                                     <span class="display-1 border-3 p-4 fw-bold" style="font-size: 4rem; color: rgb(66, 55, 129); font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-							border: #3a3a42; border-style: dashed;
-							 outline: dotted #888;outline-offset:8px; outline-width: 2px;">02+</span>
+                                border: #3a3a42; border-style: dashed;
+                                 outline: dotted #888;outline-offset:8px; outline-width: 2px;">02+</span>
                                 </div>
                                 <div class="col-sm-6 text-start ">
                                     <span class="h3"
@@ -478,130 +503,15 @@
                 </div>
             </div>
         </div>
-
-        <!--end testimonial-->
-
-
-
-
-
-        <!-- start testimonial slider-->
-        <div class="container-fluid">
-            <div class="container py-md-5">
-                <div class="card mb-3 border-0 mx-lg-5">
-
-                    <div class="row g-0 justify-content-between">
-                        <div class="col-md-5 col-lg-5">
-                            <img src="./assets/img/hero.png" height="70%" class="img-fluid rounded-start"
-                                alt="Web Developer">
-                        </div>
-
-                        <div class="col-md-7 col-lg-6 my-auto px-lg-5">
-                            <div class="mx-auto">
-                                <div id="carouselExampleDark" class="carousel carousel-dark slide p-0 m-0"
-                                    data-bs-ride="carousel">
-
-                                    <div class="carousel-inner m-auto p-0" style="min-height: 350px;">
-
-                                        <div class="carousel-item active " data-bs-interval="10000"
-                                            style="height: 350px;">
-                                            <div class="card-body mx-auto">
-
-                                                <h5 class="card-title mb-4 h2"
-                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
-                                                    Web development</h5>
-
-                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
-                                                    develop successful Digital
-                                                    ideas and strategies that engage and convert significant, trageted
-                                                    traffic develop successful Digital
-                                                    ideas and strategies that engage and convert.</p>
-                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
-                                                        Envato Ceo</small></p>
-                                                <button class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
-                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">Request a
-                                                    Quote <i class="bi bi-chevron-right"></i></button>
-
-
-                                            </div>
-
-                                        </div>
-                                        <div class="carousel-item" data-bs-interval="10000" style="height: 350px;">
-                                            <div class="card-body mx-auto">
-
-                                                <h5 class="card-title mb-4 h2"
-                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
-                                                    web design</h5>
-
-                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
-                                                    develop successful Digital
-                                                    ideas and strategies that engage and convert significant, trageted
-                                                    traffic develop successful Digital
-                                                    ideas and strategies that engage and convert.</p>
-                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
-                                                        Envato Ceo</small></p>
-                                                <button class="btn btn-info btn-sm btn-rounded mb-3 text-white p-2 px-4"
-                                                    style="background: rgb(3, 77, 77); border-radius: 50px;">lern more
-                                                    <i class="bi bi-chevron-right"></i></button>
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="carousel-item" data-bs-interval="10000" style="height: 350px;">
-                                            <div class="card-body mx-auto">
-
-                                                <h5 class="card-title mb-4 h2"
-                                                    style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: rgb(2, 65, 65);">
-                                                    SEO</h5>
-
-                                                <p class="card-text" style="color:rgb(68, 78, 78);">Their business to
-                                                    develop successful Digital
-                                                    ideas and strategies that engage and convert significant, trageted
-                                                    traffic develop successful Digital
-                                                    ideas and strategies that engage and convert.</p>
-                                                <p class="card-text mb-4"><small class="text-muted">Rachel Scarlett,
-                                                        Envato Ceo</small></p>
-                                                <h4>lern more</h4>
-
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <div class="carousel-indicators" style="bottom: 0;">
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                            aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                                            aria-label="Slide 3"></button>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--end testimonial-->
-
-
+        <!-- end carusol-->
 
         <!-----Trusted by more than 40 million people------>
         <div class="container-fluid">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <h2 class="text-center fs-1 fw-bold text-center p-lg-4 mt-4" style="color: #3a3a3a;">Work
                     </h2>
-                    <div class="col-md-6 py-5 px-lg-4 text-center" data-aos="fade-right" data-aos-delay="100">
+                    <div class="col-md-6 col-lg-5 py-5 px-lg-4 text-center" data-aos="fade-right" data-aos-delay="100">
                         <img src="./assets/img/slider-dec.png" alt="Responsive web design" class="rounded img-fluid"
                             height="90%" width="90%" />
                     </div>
@@ -617,11 +527,12 @@
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
                                 <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i> 
+                                <i class="bi bi-star-fill"></i>
                             </h6>
                             <h5 class="text-left">The customer service and fast response are superb! Thank you for
-                                making this process fun and seamless.</h5> 
-                            <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/md-sharif-uddin/"> Contuct-Us </a>
+                                making this process fun and seamless.</h5>
+                            <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/md-sharif-uddin/">
+                                Contuct-Us </a>
 
 
                         </div>
@@ -630,13 +541,10 @@
             </div>
         </div>
 
-
-
-
         <!-----start Private Health thambails 2------>
         <div class="container-fluid bg-light">
             <div class="container">
-                <div class="row p-lg-4">
+                <div class="row p-lg-4 justify-content-center">
                     <div class="col-md-6 p-lg-5 py-5" data-aos="fade-right" data-aos-delay="100">
                         <h2 class="text-start fw-bold py-4">Search Enzine Optimization!</h2>
                         <p class="fs-5">1. Login or Sign up - it only takes a moment.</p>
@@ -645,17 +553,13 @@
                         <p class="fs-5">4. On Pages SEO</p>
                         <p class="fs-5">5. Publish your website with First Pages.</p>
                     </div>
-                    <div class="col-md-6 py-md-5 px-lg-3 text-start" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-md-5 py-md-5 px-lg-3 text-start" data-aos="fade-left" data-aos-delay="100">
                         <img src="./assets/img/slider1.png" alt="Software company" class="rounded img-fluid" width="80%"
                             height="80%" />
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
 
 
         <!-- start faqs-->
@@ -774,13 +678,9 @@
                                             first-choice employer</div>
                                     </div>
                                 </div>
-
-
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -788,42 +688,11 @@
 
         <!--end faqs-->
 
-
-
-        <!-- start carusol-->
-
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade py-5" data-bs-ride="carousel">
-            <div class="parallax w-100 my-auto" data-z-index="2" data-parallax="scroll" style="height:60vh; background-image: url('./assets/images/body-bg.webp'); background-attachment: fixed;
-						background-position: center; background-repeat: no-repeat; background-size: cover;">
-                <div class="carousel-caption m-auto">
-                    <div class="row justify-content-center my-auto">
-                        <div class="col-md-9 col-lg-7 my-auto" data-aos="fade-up" data-aos-delay="100">
-                            <div class="info text-start ">
-                                <h1 class="text-white display-6" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-								 text-shadow:1px 1px 1px #999696;  letter-spacing: .5px;">
-                                  Search keyword</h1>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" aria-label="Sizing example input"
-                                        aria-describedby="inputGroup-sizing-default"
-                                        placeholder="Search Your Insurence Community Team...">
-                                    <span class="input-group-text rounded-end" id="inputGroup-sizing-default"><i
-                                            class="bi bi-search fs-4 px-2"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end carusol-->
-
-
-
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact col-12 col-lg-12 px-lg-3 mb-5 py-5">
             <div class="container">
                 <div class="row container info justify-content-center m-auto pb-5">
-                    <div class="container col-lg-6">
+                    <div class="container">
                         <div class="text-center text-dark m-auto">
                             <h2 class="fw-bold pt-4"><span class="border-bottom border-3 border-warning pb-1">Contact
                                 </span></h2>
@@ -832,23 +701,26 @@
                 </div>
 
                 <div class="row align-items-center text-center justify-content-center my-lg-5">
-
-                    <div class="col-md-4">
-                        <div class="info-box bg-light p-2">
-                            <h4><i class="bi bi-map fs-5 text-info"></i> Address </h4>
-                            <p>Dhaka, Bangladesh</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-box bg-light p-2">
-                            <h4><i class="bi bi-envelope fs-5 text-info"></i> Email</h4>
-                            <p>sharif.uddin.9977@gmail.com
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="info-box bg-light p-2">
-                            <h4><i class="bi bi-phone fs-5 text-info"></i> Call</h4>
-                            <p>+880 1965674161</p>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info-box card bg-light p-2">
+                                    <h4><i class="bi bi-map fs-5 text-info"></i> Address </h4>
+                                    <p>Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box card bg-light p-2">
+                                    <h4><i class="bi bi-envelope fs-5 text-info"></i> Email</h4>
+                                    <p>sharif.uddin.9977@gmail.com
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box card bg-light p-2">
+                                    <h4><i class="bi bi-phone fs-5 text-info"></i> Call</h4>
+                                    <p>+880 1965674161</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -859,7 +731,6 @@
             <a href="#" class="back-to-top d-flex justify-content-end fixed-bottom m-4 fs-2 fw-bolder text-end"
                 style="width:40px;">
                 <i class="bi bi-arrow-up-circle-fill fs-2" style="color: rgb(184, 163, 109, 0.4);"></i></a>
-
         </span>
 
         <footer class="footer mb-0 b-0 border-bottom" style="background-color: #0e1b35">
@@ -868,10 +739,7 @@
                     <div class="row text-start align-items-start">
                         <div class="col-md-6 col-lg-5 footer-contact mb-4 mb-lg-0">
                             <h3 class="text-white">Sharif Uddin<span class="fs-1 fw-bold">.</span></h3>
-                            <p> jamalpur, Mymensingh<br>
-                                Bangladesh <br><br>
-                            </p>
-
+                            <p> Dhaka, Bangladesh</p>
                         </div>
 
                         <div class="link col-6 col-md-6 col-lg-3 footer-links text-start">
@@ -902,9 +770,7 @@
         <!-- End Footer -->
 
         <footer class="footer mt-auto mb-0" style="background-color: #0e1b35">
-
             <div class="container d-flex">
-
                 <div class="container d-md-flex py-2 ">
                     <div class="me-md-auto text-center text-md-center my-auto p-0 my-auto">
                         <div class="credits m-auto">
@@ -912,7 +778,6 @@
                                     uddin</span>
                         </div>
                     </div>
-
                     <div class="social-links text-center text-md-end pt-4 pt-md-0 my-auto fs-4">
                         <a href="#" class="linkedin rounded"><i class="bi-linkedin"></i></a>
                         <a href="#" class="facebook rounded"><i class="bi-facebook"></i></a>
@@ -928,6 +793,29 @@
     <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/dist/js/main.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const downloadButton = document.querySelector(".getcvbutton");
+
+            if (downloadButton) {
+                downloadButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const cvUrl = "./Laravel-Developer-Resume-V-3.0-of-Sharif-Uddin-Jan-2025.pdf";
+
+                    const link = document.createElement("a");
+                    link.href = cvUrl;
+                    link.setAttribute("download", "CV.pdf");
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
+            }
+            function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        }); 
+    </script>
 </body>
 
 </html>
