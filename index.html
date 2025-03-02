@@ -316,7 +316,7 @@
           <!-- Left Side -->
           <div class="space-y-6">
             <div class="flex items-center space-x-6">
-              <img src="./assets/images/sharif-uddin.jpg" class="w-28 h-28 object-cover rounded-lg shadow-md"
+              <img src="./assets/images/sharif-uddin.jpg" class="w-28 h-28 object-contain rounded-lg shadow-md"
                 alt="Programmer Sharif">
               <div>
                 <p class="text-lg font-semibold">Sharif Uddin</p>
@@ -455,63 +455,69 @@
 
       
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> 
-      <!-- Portfolio Grid -->
-        <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
-          onclick="openImage('assets/portfolio/booksbd/booksbd.png', 'Booksbd', 'A e-Commerce website for books')">
-          <img src="assets/portfolio/booksbd/booksbd.png" alt="Booksbd" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-            
-          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">Booksbd</h5>
-              <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
-          </div>
-          <div class="bg-gray-800 p-4 text-center">
-            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Booksbd</span></h4>
-            <p class="text-white text-sm">Built with Laravel & Vue.js</p>
-          </div>
+      <!-- Portfolio Grid --> 
+       <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
+              onclick="openImage('assets/portfolio/booksbd/booksbd.png', 'Booksbd', 'An e-Commerce website for books')">
+              
+            <img src="assets/portfolio/booksbd/booksbd.png" alt="Booksbd" 
+                class="w-full h-80 mb-15 object-contain transition-transform duration-300 group-hover:scale-105">
+        
+            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 
+                        group-hover:opacity-100 transition-opacity duration-300">
+                <h5 class="text-white text-xl font-semibold">Booksbd</h5>
+                <p class="text-gray-200 text-sm">An eCommerce website for books and Inventory</p>
+            </div>
+        
+            <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
+                <h4 class="text-white text-lg">
+                    <span class="font-semibold text-teal-300">Booksbd</span>
+                </h4>
+                <p class="text-white text-sm">Built with Laravel & Vue.js</p>
+            </div>
         </div>
 
+        
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/tranz/tranz.png', 'T-ranz', 'A Vehicle Management System')">
           <img src="assets/portfolio/tranz/tranz.png" alt="T-ranz" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+              class="w-full  h-80 mb-15  object-contain transition-transform duration-300 group-hover:scale-110">
             
           <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h5 class="text-white text-xl font-semibold">T-ranz</h5>
               <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
           </div>
-          <div class="bg-gray-800 p-4 text-center">
+          <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">T-ranz</span></h4>
             <p class="text-white text-sm">Built with Laravel & Vue.js</p>
           </div>
         </div>
-          <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
-            onclick="openImage('assets/portfolio/secure-crm-square.png', 'Secure CRM', 'A bank debt management system')">
-            <img src="assets/portfolio/secure-crm-square.png" alt="Secure CRM" 
-                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-              
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h5 class="text-white text-xl font-semibold">Secure CRM</h5>
+
+        <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
+        onclick="openImage('assets/portfolio/secure-crm-square.png', 'Secure CRM', 'A bank debt management system')">
+        <img src="assets/portfolio/secure-crm-square.png" alt="Secure CRM"
+              class="w-full  h-80 object-contain transition-transform duration-300 group-hover:scale-110">
+            
+          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Secure CRM</h5>
                 <p class="text-gray-200 text-sm">A bank debt management system</p>
-            </div>
-            <div class="bg-gray-800 p-4 text-center">
-              <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Secure CRM</span></h4>
-              <p class="text-white text-sm">Built with Laravel & Vue.js</p>
-            </div>
           </div>
-          
+          <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Secure CRM</span></h4>
+            <p class="text-white text-sm">Built with Laravel & jQuery</p>
+          </div>
+        </div>
 
         
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/fra/fra.png', 'Fire Requirtment Australlia', 'A Vehicle Management System')">
           <img src="assets/portfolio/fra/fra.png" alt="Fire Requirtment Australlia" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+              class="w-full  h-80 object-contain transition-transform duration-300 group-hover:scale-110">
             
           <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">Fire Requirtment Australlia</h5>
-              <p class="text-gray-200 text-sm">A e-Learning Platform</p>
+            <h5 class="text-white text-xl font-semibold">Fire Requirtment Australlia</h5>
+            <p class="text-gray-200 text-sm">A e-Learning Platform</p>
           </div>
-          <div class="bg-gray-800 p-4 text-center">
+          <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Fire Requirtment Australlia</span></h4>
             <p class="text-white text-sm">Built with Laravel, Filament PHP & React js</p>
           </div>
@@ -520,13 +526,13 @@
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/trsol/trsol.png', 'Truist Solution', 'A Truist Solution Platform')">
           <img src="assets/portfolio/trsol/trsol.png" alt="Truist Solution" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+              class="w-full  h-80 object-contain transition-transform duration-300 group-hover:scale-110">
             
           <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h5 class="text-white text-xl font-semibold">Truist Solution</h5>
               <p class="text-gray-200 text-sm">A e-Learning Platform</p>
           </div>
-          <div class="bg-gray-800 p-4 text-center">
+          <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Truist Solution</span></h4>
             <p class="text-white text-sm">Built with Laravel</p>
           </div>
@@ -535,13 +541,13 @@
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
         onclick="openImage('assets/portfolio/pathedits.png', 'Path-edits', 'A Vehicle Management System')">
         <img src="assets/portfolio/pathedits.png" alt="Path-edits" 
-            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+            class="w-full  h-80 object-contain transition-transform duration-300 group-hover:scale-110">
           
         <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h5 class="text-white text-xl font-semibold">Path-edits</h5>
             <p class="text-gray-200 text-sm">A eCommerce website for graphics</p>
         </div>
-        <div class="bg-gray-800 p-4 text-center">
+        <div class="bg-gray-800 p-4 text-center bottom-0 absolute w-full">
           <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Path-edits</span></h4>
           <p class="text-white text-sm">Built with Laravel</p>
         </div>
@@ -622,7 +628,7 @@
 <div id="fullView" class="fixed inset-0 flex items-center justify-center hidden transition-opacity duration-300 z-50">
   <div id="blurBg" class="absolute inset-0 bg-black bg-opacity-90 backdrop-blur-md transition-all duration-300"></div>
   
-  <button class="absolute top-4 left-4 text-white text-xl bg-gray-800 p-2 rounded-md" onclick="closeImage()">⬅ Back</button>
+  <button class="absolute top-4 left-4 text-white text-xl bg-gray-800 p-2 rounded-md z-999" onclick="closeImage()">⬅ Back</button>
   
   <div class="text-center relative z-10 bg-white p-8 rounded-lg shadow-lg overflow-y-scroll">
       <img id="fullImage" src="" class="w-auto max-h-[80vh] rounded-lg shadow-lg" />
