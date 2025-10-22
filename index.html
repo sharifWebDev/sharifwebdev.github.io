@@ -70,30 +70,95 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+      /* Accounts for fixed header */
+    }
+  
+    .dark {
+      color-scheme: dark;
+    }
+
+    .dark body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    .transition-theme {
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Contact form animations */
+    .contact-input {
+      transition: all 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+
+    .contact-input:focus {
+      border-bottom: 2px solid #0d9488;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-floating {
+      position: relative;
+    }
+
+    .form-floating label {
+      transition: all 0.2s ease;
+      transform-origin: 0 0;
+    }
+
+    .form-floating input:focus~label,
+    .form-floating input:not(:placeholder-shown)~label {
+      transform: scale(0.85) translateY(-24px);
+      color: #0d9488;
+    }
+  </style>
+ 
 </head>
 
 <body class="font-sans">
 
-  <section class="bg-white">
-    <nav class="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+  <section class="">
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-700 shadow-sm">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="./assets/img/developerSharifLogo.png" class="h-10" alt="Sharif uddin Logo">
+          <div class="relative">
+            <img src="./assets/img/developerSharifLogo.png" class="h-10 dark:brightness-125 transition-all duration-300" alt="Sharif uddin Logo">
+            <div class="absolute -inset-1 opacity-20 group-hover:opacity-40 transition duration-300"></div>
+          </div> 
         </a>
         <div class="flex md:order-2 space-x-3 gap-2 md:space-x-0 rtl:space-x-reverse">
-          <button class="text-white bg-[#006DB2] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium 
-            rounded-lg text-sm px-3 py-2 text-center">
-            <a class="button" href="https://linkedin.com/in/md-sharif-uddin"> <i class="bi bi-linkedin"></i></a>
+          <button class="text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center transition-all duration-300 transform hover:scale-105 shadow-md">
+            <a class="button flex items-center" href="https://linkedin.com/in/md-sharif-uddin"> 
+              <i class="bi bi-linkedin mr-1"></i>
+            </a>
           </button>
-          <button
-            class="text-white bg-[#006DB2] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center"><a
-              class="button" href="callto:(+880) 1965674161"> <i class="bi bi-whatsapp"></i></a></button>
-          <button
-            class="text-white bg-[#006DB2] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center"><a
-              class="button" href="mailto:sharif.uddin.9977@gmail.com"> <i class="bi bi-envelope"></i></a></button>
+          <button class="text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center transition-all duration-300 transform hover:scale-105 shadow-md">
+            <a class="button flex items-center" href="callto:(+880) 1965674161"> 
+              <i class="bi bi-whatsapp mr-1"></i>
+            </a>
+          </button>
+          <button class="text-white bg-gradient-to-r from-blue-600 to-teal-500 hover:from-blue-700 hover:to-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center transition-all duration-300 transform hover:scale-105 shadow-md">
+            <a class="button flex items-center" href="mailto:sharif.uddin.9977@gmail.com"> 
+              <i class="bi bi-envelope mr-1"></i>
+            </a>
+          </button>
+
+          <!-- Enhanced Dark Mode Toggle -->
+          <button id="darkModeToggle" class="dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 transform hover:scale-105">
+            <svg class="w-5 h-5 hidden dark:block text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+            </svg>
+            <svg class="w-5 h-5 dark:hidden text-gray-700" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+          </button>
 
           <button id="menu-toggle" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 transition-colors duration-300">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -102,28 +167,32 @@
           </button>
         </div>
         <div id="navbar-sticky"
-          class="hidden items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-2000">
+          class="hidden items-center justify-between w-full md:flex md:w-auto md:order-1 transition-all duration-300">
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
-            <li><a href="#home"
-                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0">Home</a>
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 dark:border-gray-700 dark:md:bg-gray-900">
+            <li>
+              <a href="#home"
+                class="nav-link block py-2 px-3 text-teal-900 rounded-md md:bg-transparent md:text-teal-700 md:p-0 dark:text-white dark:md:text-teal-400 transition-all duration-300"
+                aria-current="page">Home</a>
             </li>
-            <li><a href="#about"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">About</a>
+            <li>
+              <a href="#about"
+                class="nav-link block py-2 px-3 text-gray-900 rounded-md hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-teal-400 transition-colors duration-300">About</a>
             </li>
-            <li><a href="#portfolio"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Portfolio</a>
+            <li>
+              <a href="#portfolio"
+                class="nav-link block py-2 px-3 text-gray-900 rounded-md hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-teal-400 transition-colors duration-300">Portfolio</a>
             </li>
-            <li><a href="#contact"
-                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Contact</a>
+            <li>
+              <a href="#contact"
+                class="nav-link block py-2 px-3 text-gray-900 rounded-md hover:bg-gray-100 md:hover:bg-transparent md:hover:text-teal-700 md:p-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-teal-400 transition-colors duration-300">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </section>
-
-
+ 
   <section class="h-screen w-full flex items-center justify-center" id="home">
     <div class="main-container flex flex-col justify-center items-center gap-10">
       <div class="max-w-xl text-center">
@@ -305,9 +374,9 @@
     </div>
   </section>
 
-  <section id="about" class="flex flex-col w-full flex items-center justify-center">
+  <section id="about" class="flex flex-col min-h-screen w-full items-center justify-center transition-theme dark:bg-gray-900">
     <div class="container max-w-screen-xl pb-40">
-      <div class="bg-white border rounded-lg p-8">
+      <div class="p-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl font-bold text-teal-700">About Myself</h2>
         </div>
@@ -445,25 +514,56 @@
   </section>
 
 
-  <section id="portfolio" class="h-screen w-full flex items-center justify-center">
+  <section id="portfolio" class="min-h-screen w-full flex items-center justify-center transition-theme dark:bg-gray-900">
     <div class="container max-w-screen-xl pb-40 pt-40">
       <!-- Section Heading -->
       <div class="text-center mb-10">
         <h2 class="text-3xl font-bold text-teal-700">Portfolio</h2>
-        <h6 class="text-lg text-blue-900">Working With Team.</h6>
+        <h6 class="text-lg text-teal-900">Working With Team.</h6>
       </div>
 
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> 
-      <!-- Portfolio Grid -->
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Portfolio Grid -->
+        <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
+          onclick="openImage('assets/portfolio/travel-and-tour/admin-dashboard.jpg', 'Booksbd', 'A e-Commerce website for books')">
+          <img src="assets/portfolio/travel-and-tour/admin-dashboard.jpg" alt="Booksbd"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">UnboundBd</h5>
+            <p class="text-gray-200 text-sm">A tourism website for Bangladesh travel and tour</p>
+          </div>
+          <div class="bg-gray-800 p-4 text-center">
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">UnboundBd</span></h4>
+            <p class="text-white text-sm">Built with Laravel & JavaScript</p>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
+          onclick="openImage('assets/portfolio/proptinize-lead-crm/admin-dashboard-crm.jpg', 'Booksbd', 'A e-Commerce website for books')">
+          <img src="assets/portfolio/proptinize-lead-crm/admin-dashboard-crm.jpg" alt="Booksbd"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Proptinize Lead CRM</h5>
+            <p class="text-gray-200 text-sm">A lead management website for real estate</p>
+          </div>
+          <div class="bg-gray-800 p-4 text-center">
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Proptinize Lead CRM</span></h4>
+            <p class="text-white text-sm">Built with Laravel & JavaScript</p>
+          </div>
+        </div>
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/booksbd/booksbd.png', 'Booksbd', 'A e-Commerce website for books')">
-          <img src="assets/portfolio/booksbd/booksbd.png" alt="Booksbd" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-            
-          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">Booksbd</h5>
-              <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
+          <img src="assets/portfolio/booksbd/booksbd.png" alt="Booksbd"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Booksbd</h5>
+            <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
           </div>
           <div class="bg-gray-800 p-4 text-center">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Booksbd</span></h4>
@@ -473,127 +573,176 @@
 
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/tranz/tranz.png', 'T-ranz', 'A Vehicle Management System')">
-          <img src="assets/portfolio/tranz/tranz.png" alt="T-ranz" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-            
-          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">T-ranz</h5>
-              <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
+          <img src="assets/portfolio/tranz/tranz.png" alt="T-ranz"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">T-ranz</h5>
+            <p class="text-gray-200 text-sm">A eCommerce website for books and Inventory</p>
           </div>
           <div class="bg-gray-800 p-4 text-center">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">T-ranz</span></h4>
             <p class="text-white text-sm">Built with Laravel & Vue.js</p>
           </div>
         </div>
-          <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
-            onclick="openImage('assets/portfolio/secure-crm-square.png', 'Secure CRM', 'A bank debt management system')">
-            <img src="assets/portfolio/secure-crm-square.png" alt="Secure CRM" 
-                class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-              
-            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h5 class="text-white text-xl font-semibold">Secure CRM</h5>
-                <p class="text-gray-200 text-sm">A bank debt management system</p>
-            </div>
-            <div class="bg-gray-800 p-4 text-center">
-              <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Secure CRM</span></h4>
-              <p class="text-white text-sm">Built with Laravel & Vue.js</p>
-            </div>
-          </div>
-          
-
-        
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
-          onclick="openImage('assets/portfolio/fra/fra.png', 'Fire Requirtment Australlia', 'A Vehicle Management System')">
-          <img src="assets/portfolio/fra/fra.png" alt="Fire Requirtment Australlia" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-            
-          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">Fire Requirtment Australlia</h5>
-              <p class="text-gray-200 text-sm">A e-Learning Platform</p>
+          onclick="openImage('assets/portfolio/secure-crm-square.png', 'Secure CRM', 'A bank debt management system')">
+          <img src="assets/portfolio/secure-crm-square.png" alt="Secure CRM"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Secure CRM</h5>
+            <p class="text-gray-200 text-sm">A bank debt management system</p>
           </div>
           <div class="bg-gray-800 p-4 text-center">
-            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Fire Requirtment Australlia</span></h4>
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Secure CRM</span></h4>
+            <p class="text-white text-sm">Built with Laravel & Vue.js</p>
+          </div>
+        </div>
+
+
+
+        <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
+          onclick="openImage('assets/portfolio/fra/fra.png', 'Fire Requirtment Australlia', 'A Vehicle Management System')">
+          <img src="assets/portfolio/fra/fra.png" alt="Fire Requirtment Australlia"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Fire Requirtment Australlia</h5>
+            <p class="text-gray-200 text-sm">A e-Learning Platform</p>
+          </div>
+          <div class="bg-gray-800 p-4 text-center">
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Fire Requirtment Australlia</span>
+            </h4>
             <p class="text-white text-sm">Built with Laravel, Filament PHP & React js</p>
           </div>
         </div>
 
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
           onclick="openImage('assets/portfolio/trsol/trsol.png', 'Truist Solution', 'A Truist Solution Platform')">
-          <img src="assets/portfolio/trsol/trsol.png" alt="Truist Solution" 
-              class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-            
-          <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <h5 class="text-white text-xl font-semibold">Truist Solution</h5>
-              <p class="text-gray-200 text-sm">A e-Learning Platform</p>
+          <img src="assets/portfolio/trsol/trsol.png" alt="Truist Solution"
+            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h5 class="text-white text-xl font-semibold">Truist Solution</h5>
+            <p class="text-gray-200 text-sm">A e-Learning Platform</p>
           </div>
           <div class="bg-gray-800 p-4 text-center">
             <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Truist Solution</span></h4>
             <p class="text-white text-sm">Built with Laravel</p>
           </div>
         </div>
-        
+
         <div class="relative group overflow-hidden rounded-lg shadow-md border cursor-pointer"
-        onclick="openImage('assets/portfolio/pathedits.png', 'Path-edits', 'A Vehicle Management System')">
-        <img src="assets/portfolio/pathedits.png" alt="Path-edits" 
+          onclick="openImage('assets/portfolio/pathedits.png', 'Path-edits', 'A Vehicle Management System')">
+          <img src="assets/portfolio/pathedits.png" alt="Path-edits"
             class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-          
-        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+
+          <div
+            class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <h5 class="text-white text-xl font-semibold">Path-edits</h5>
             <p class="text-gray-200 text-sm">A eCommerce website for graphics</p>
+          </div>
+          <div class="bg-gray-800 p-4 text-center">
+            <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Path-edits</span></h4>
+            <p class="text-white text-sm">Built with Laravel</p>
+          </div>
         </div>
-        <div class="bg-gray-800 p-4 text-center">
-          <h4 class="text-white text-lg"><span class="font-semibold text-teal-300">Path-edits</span></h4>
-          <p class="text-white text-sm">Built with Laravel</p>
-        </div>
-      </div>
 
-   
+
       </div>
     </div>
 
   </section>
 
-  <section id="contact" class="h-screen w-full flex items-center justify-center">
-    <div class="container max-w-screen-xl pb-40 pt-40">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-teal-700">Contact</h2>
+ <!-- Contact Section with WhatsApp Chat -->
+<section id="contact" class="min-h-screen w-full flex items-center justify-center transition-theme dark:bg-gray-900">
+  <div class="container max-w-screen-xl px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-teal-600 dark:text-teal-400 mb-4">Get In Touch</h2>
+      <p class="text-gray-600 dark:text-gray-400">Let's discuss your project</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-screen-md mx-auto dark:bg-gray-800">
+      <!-- Contact Info -->
+      <div class="space-y-8">
+        <div class="flex items-start space-x-6">
+          <div class="bg-teal-500 rounded-full p-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 dark:text-white">Location</h3>
+            <p class="text-gray-600 dark:text-gray-400">Dhaka, Bangladesh</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-6">
+          <div class="bg-teal-500 rounded-full p-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 dark:text-white">Email</h3>
+            <a href="mailto:sharif.uddin.9977@gmail.com" class="text-teal-600 dark:text-teal-400 hover:underline">
+              sharif.uddin.9977@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-6">
+          <div class="bg-teal-500 rounded-full p-3">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2 dark:text-white">Phone</h3>
+            <a href="tel:+8801965674161" class="text-teal-600 dark:text-teal-400 hover:underline">
+              +880 1965674161
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="flex flex-wrap justify-center space-x-4 my-8">
-        <!-- Address Box -->
-        <div class="w-full sm:w-3/12 mb-6 px-4">
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center">
-            <i class="bi bi-map fs-5 text-teal-600 mr-4"></i>
-            <div>
-              <h4 class="text-lg font-semibold text-teal-600">Address</h4>
-              <p class="text-gray-700">Dhaka, Bangladesh</p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Email Box -->
-        <div class="w-full sm:w-3/12 mb-6 px-4">
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center">
-            <i class="bi bi-envelope fs-5 text-teal-600 mr-4"></i>
-            <div>
-              <h4 class="text-lg font-semibold text-teal-600">Email</h4>
-              <p class="text-gray-700">sharif.uddin.9977@gmail.com</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Phone Box -->
-        <div class="w-full sm:w-3/12 mb-6 px-4">
-          <div class="bg-white shadow-md rounded-lg p-6 flex items-center">
-            <i class="bi bi-phone fs-5 text-teal-600 mr-4"></i>
-            <div>
-              <h4 class="text-lg font-semibold text-teal-600">Call</h4>
-              <p class="text-gray-700">+880 1965674161</p>
-            </div>
-          </div>
-        </div>
+      <!-- WhatsApp Chat Section -->
+      <div class="flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-8 rounded-lg text-center">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-600 dark:text-teal-400">Chat on WhatsApp</h3>
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Click below to start a conversation directly on WhatsApp.</p>
+        <a href="https://wa.me/8801965674161?text=Hi%20Sharif%2C%20I%20want%20to%20discuss%20a%20project!"
+          target="_blank"
+          class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full shadow-md transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2a10 10 0 00-8.94 13.94l-.61 2.22a1 1 0 001.22 1.22l2.22-.61A10 10 0 1012 2zm0 18a8 8 0 01-4.08-1.12l-.29-.17-1.31.36.36-1.31-.17-.29A8 8 0 1112 20zm4.42-5.41c-.24-.12-1.41-.7-1.63-.78s-.38-.12-.54.12-.62.78-.76.94-.28.18-.52.06a6.6 6.6 0 01-1.94-1.2 7.28 7.28 0 01-1.35-1.68c-.14-.24 0-.37.1-.49l.31-.36a1.68 1.68 0 00.21-.36.43.43 0 000-.41c-.06-.12-.54-1.3-.74-1.78s-.39-.42-.54-.42h-.46a.87.87 0 00-.62.29 2.52 2.52 0 00-.78 1.86 4.39 4.39 0 00.9 2.3 10 10 0 003.78 3.58 12.27 12.27 0 002.3.86 2.86 2.86 0 001.36.08 2.26 2.26 0 001.48-1 1.85 1.85 0 00.13-1c-.05-.09-.2-.15-.44-.27z" />
+          </svg>
+          <span>Message on WhatsApp</span>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/8801965674161?text=Hi%20Sharif%2C%20I%20found%20you%20on%20your%20portfolio%20website!"
+    target="_blank"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110 z-50">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M12 2a10 10 0 00-8.94 13.94l-.61 2.22a1 1 0 001.22 1.22l2.22-.61A10 10 0 1012 2zm0 18a8 8 0 01-4.08-1.12l-.29-.17-1.31.36.36-1.31-.17-.29A8 8 0 1112 20zm4.42-5.41c-.24-.12-1.41-.7-1.63-.78s-.38-.12-.54.12-.62.78-.76.94-.28.18-.52.06a6.6 6.6 0 01-1.94-1.2 7.28 7.28 0 01-1.35-1.68c-.14-.24 0-.37.1-.49l.31-.36a1.68 1.68 0 00.21-.36.43.43 0 000-.41c-.06-.12-.54-1.3-.74-1.78s-.39-.42-.54-.42h-.46a.87.87 0 00-.62.29 2.52 2.52 0 00-.78 1.86 4.39 4.39 0 00.9 2.3 10 10 0 003.78 3.58 12.27 12.27 0 002.3.86 2.86 2.86 0 001.36.08 2.26 2.26 0 001.48-1 1.85 1.85 0 00.13-1c-.05-.09-.2-.15-.44-.27z" />
+    </svg>
+  </a>
+</section>
 
   <footer class="mt-16">
     <div class="flex items-center justify-center gap-8 p-4"><a class="cursor-pointer" target="_blank"
@@ -618,34 +767,57 @@
     </div>
   </footer>
 
-<!-- Full-Screen View -->
-<div id="fullView" class="fixed inset-0 flex items-center justify-center hidden transition-opacity duration-300 z-50">
-  <div id="blurBg" class="absolute inset-0 bg-black bg-opacity-90 backdrop-blur-md transition-all duration-300"></div>
-  
-  <button class="absolute top-4 left-4 text-white text-xl bg-gray-800 p-2 rounded-md" onclick="closeImage()">⬅ Back</button>
-  
-  <div class="text-center relative z-10 bg-white p-8 rounded-lg shadow-lg overflow-y-scroll">
+  <!-- Full-Screen View -->
+  <div id="fullView" class="fixed inset-0 flex items-center justify-center hidden transition-opacity duration-300 z-50">
+    <div id="blurBg" class="absolute inset-0 bg-black bg-opacity-90 backdrop-blur-md transition-all duration-300"></div>
+
+    <button class="absolute top-4 left-4 text-white text-xl bg-gray-800 p-2 rounded-md" onclick="closeImage()">⬅
+      Back</button>
+
+    <div class="text-center relative z-10 bg-white p-8 rounded-lg shadow-lg overflow-y-scroll">
       <img id="fullImage" src="" class="w-auto max-h-[80vh] rounded-lg shadow-lg" />
       <h2 id="fullTitle" class="text-gray-800 text-2xl font-bold mt-4"></h2>
       <p id="fullDescription" class="text-gray-700 mt-2"></p>
+    </div>
   </div>
-</div>
 
-<script>
+  <script>
     function openImage(src, title, description) {
-        document.getElementById("fullView").classList.remove("hidden");
-        document.getElementById("fullImage").src = src;
-        document.getElementById("fullTitle").innerText = title;
-        document.getElementById("fullDescription").innerText = description;
+      document.getElementById("fullView").classList.remove("hidden");
+      document.getElementById("fullImage").src = src;
+      document.getElementById("fullTitle").innerText = title;
+      document.getElementById("fullDescription").innerText = description;
     }
 
     function closeImage() {
-        document.getElementById("fullView").classList.add("hidden");
+      document.getElementById("fullView").classList.add("hidden");
     }
-</script>
+  </script>
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
       document.getElementById('navbar-sticky').classList.toggle('hidden');
+    });
+  </script>
+ 
+  <script> 
+    if (localStorage.getItem('darkMode') === 'enabled' ||
+      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+ 
+  <script> 
+    const darkModeToggle = document.getElementById('darkModeToggle');
+
+    darkModeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      // Save preference
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
     });
   </script>
 </body>
