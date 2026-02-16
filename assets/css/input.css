@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -12,12 +16,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0d9488;
+  background: #0f766e;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f766e;
+  background: #0d655d;
 }
 
 /* Glassmorphism Utilities */
@@ -60,7 +64,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  background-image: linear-gradient(to right, #0d9488, #3b82f6);
+  background-image: linear-gradient(to right, #0f766e, #3b82f6);
 }
 
 .dark .gradient-text {
@@ -88,8 +92,8 @@ section {
 
 /* Mobile Nav Active */
 .nav-link.active {
-    color: #0d9488;
-    background-color: rgba(13, 148, 136, 0.1);
+    color: #0f766e;
+    background-color: rgba(15, 118, 110, 0.1);
 }
 .dark .nav-link.active {
     color: #2dd4bf;

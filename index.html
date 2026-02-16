@@ -90,45 +90,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <!-- ✅ External CSS & Libraries -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </noscript>
+  <!-- Defer non-critical CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print"
+    onload="this.media='all'">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </noscript>
 
-  <!-- ✅ Tailwind (Development Mode) -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- ✅ Preload Critical Assets -->
+  <link rel="preload" as="image" href="./assets/images/sharif-uddin.jpg" fetchpriority="high">
 
-  <!-- ✅ Custom Styles -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            heading: ['Poppins', 'sans-serif'],
-          },
-          colors: {
-            primary: {
-              50: '#f0fdfa',
-              100: '#ccfbf1',
-              500: '#14b8a6',
-              600: '#0d9488',
-              700: '#0f766e',
-            },
-            dark: {
-              800: '#1f2937',
-              900: '#111827',
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <!-- ✅ Main Stylesheet (Compiled Tailwind) -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
 <body
@@ -136,8 +124,8 @@
 
   <!-- Navbar -->
   <!-- Navbar -->
-  <header class="fixed top-0 w-full z-50 glass transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 bg-white/50 dark:bg-dark-900/50 backdrop-blur-md">
+  <header class="fixed top-0 w-full z-50 bg-white transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 bg-white dark:bg-dark-900/50 backdrop-blur-md">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <a href="#" class="flex items-center gap-2 group">
@@ -170,10 +158,10 @@
         <!-- Right Actions -->
         <div class="flex items-center gap-2 sm:gap-3">
           <button id="theme-toggle"
-            class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition text-yellow-500 dark:text-blue-400"
+            class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             aria-label="Toggle Dark Mode">
-            <i class="bi bi-sun-fill hidden" id="icon-sun"></i>
-            <i class="bi bi-moon-stars-fill" id="icon-moon"></i>
+            <i class="bi bi-sun-fill text-yellow-400 hidden" id="icon-sun"></i>
+            <i class="bi bi-moon-stars-fill text-blue-600" id="icon-moon"></i>
           </button>
           <a href="./Laravel-Developer-Resume-of-Sharif-Uddin.pdf" download
             class="hidden sm:flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-full hover:bg-primary-700 transition shadow-lg hover:shadow-primary-500/30"
@@ -225,9 +213,9 @@
 
     <div class="max-w-7xl mx-auto px-4 w-full grid md:grid-cols-2 gap-12 items-center">
       <!-- Content -->
-      <div class="text-center md:text-left space-y-6" data-aos="fade-right">
+      <div class="text-center md:text-left space-y-6">
         <div
-          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 border border-primary-100 dark:border-primary-800 text-primary-600 dark:text-primary-400 text-sm font-medium">
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-50 dark:bg-primary-900/30 border border-primary-100 dark:border-primary-800 text-primary-700 dark:text-primary-400 text-sm font-medium">
           <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
           Available for New Projects
         </div>
@@ -235,51 +223,51 @@
           Hi, I'm <span class="text-teal-500">Sharif Uddin</span>
         </h1>
 
-        <div class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium h-12 md:h-8">
+        <div class="text-xl md:text-2xl text-gray-700 dark:text-gray-300 font-medium h-12 md:h-8">
           Software Engineer (Laravel & Vue.js Specialist)
         </div>
         <div class="backdrop-blur-sm rounded-2xl" bis_skin_checked="1">
           <div class="flex flex-wrap gap-2 justify-center lg:justify-start my-5" bis_skin_checked="1">
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">PHP</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-900 dark:bg-blue-900/30 dark:text-blue-300">PHP</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">Laravel</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-900 dark:bg-green-900/30 dark:text-green-300">Laravel</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300">Vue.js</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-900 dark:bg-purple-900/30 dark:text-purple-300">Vue.js</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">Nuxt.js</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-900 dark:bg-cyan-900/30 dark:text-cyan-300">Nuxt.js</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">JavaScript</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-900 dark:bg-blue-900/30 dark:text-blue-300">JavaScript</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-teal-100 text-teal-800 dark:bg-teal-900/30 dark:text-teal-300">Tailwind
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-teal-100 text-teal-900 dark:bg-teal-900/30 dark:text-teal-300">Tailwind
               CSS</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">MySQL</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-900 dark:bg-yellow-900/30 dark:text-yellow-300">MySQL</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300">PostgreSQL</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-900 dark:bg-green-900/30 dark:text-green-300">PostgreSQL</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300">SQLite</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-900 dark:bg-yellow-900/30 dark:text-yellow-300">SQLite</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300">MS
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-orange-100 text-orange-900 dark:bg-orange-900/30 dark:text-orange-300">MS
               SQL</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">AWS</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-900 dark:bg-cyan-900/30 dark:text-cyan-300">AWS</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300">Docker</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-100 text-indigo-900 dark:bg-indigo-900/30 dark:text-indigo-300">Docker</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">DigitalOcean</span>
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-900 dark:bg-red-900/30 dark:text-red-300">DigitalOcean</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-300">REST
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-cyan-100 text-cyan-900 dark:bg-cyan-900/30 dark:text-cyan-300">REST
               APIs</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300">Realtime
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-900 dark:bg-red-900/30 dark:text-red-300">Realtime
               Applications</span>
             <span
-              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300">Clean
+              class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-900 dark:bg-blue-900/30 dark:text-blue-300">Clean
               Architecture</span>
           </div>
 
-          <p class="text-md leading-relaxed text-gray-600 dark:text-gray-400">
+          <p class="text-md leading-relaxed text-gray-700 dark:text-gray-300">
             I build scalable, secure, and high-performance web applications using modern PHP and JavaScript
             technologies.
             Focused on clean architecture, SOLID principles, and maintainable code.
@@ -298,18 +286,19 @@
 
         <!-- Socials -->
         <div class="flex gap-4 justify-center md:justify-start pt-6">
-          <a href="https://github.com/sharifWebDev" target="_blank"
-            class="text-2xl text-gray-500 hover:text-gray-900 dark:hover:text-white transition"><i
+          <a href="https://github.com/sharifWebDev" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"
+            class="text-2xl text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition"><i
               class="bi bi-github"></i></a>
-          <a href="https://linkedin.com/in/md-sharif-uddin" target="_blank"
-            class="text-2xl text-gray-500 hover:text-blue-600 transition"><i class="bi bi-linkedin"></i></a>
-          <a href="https://twitter.com/sharifWebDev" target="_blank"
-            class="text-2xl text-gray-500 hover:text-sky-500 transition"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://linkedin.com/in/md-sharif-uddin" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn Profile" class="text-2xl text-gray-700 hover:text-blue-600 dark:text-gray-400 transition"><i
+              class="bi bi-linkedin"></i></a>
+          <a href="https://twitter.com/sharifWebDev" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"
+            class="text-2xl text-gray-700 hover:text-sky-500 dark:text-gray-400 transition"><i class="bi bi-twitter-x"></i></a>
         </div>
       </div>
 
       <!-- Image -->
-      <div class="relative flex justify-center" data-aos="fade-left">
+      <div class="relative flex justify-center">
         <div class="relative w-72 h-72 md:w-96 md:h-96">
           <div
             class="absolute inset-0 bg-gradient-to-tr from-primary-500 to-primary-300 rounded-full animate-pulse opacity-10 blur-xl">
@@ -483,13 +472,15 @@
             </li>
           </ul>
           <h4 class="font-bold text-lg mb-3 mt-3">Certifications</h4>
-          <p class="space-y-4">
-            <li class="relative pl-6 border-l-2 border-primary-200 dark:border-gray-700">
-              <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-lg bg-primary-500"></div>
-              <p class="font-semibold">Professional Web Development Specialist</p>
-              <p class="text-sm text-gray-500">PeopleNTech Institute of Information Technology (2021)</p>
-            </li>
-          </p>
+          <div class="space-y-4">
+            <ul class="space-y-4">
+              <li class="relative pl-6 border-l-2 border-primary-200 dark:border-gray-700">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-lg bg-primary-500"></div>
+                <p class="font-semibold">Professional Web Development Specialist</p>
+                <p class="text-sm text-gray-500">PeopleNTech Institute of Information Technology (2021)</p>
+              </li>
+            </ul>
+            </div>
 
         </div>
 
@@ -846,18 +837,20 @@
       </div>
 
       <div class="flex gap-4">
-        <a href="https://facebook.com/sharif9977" class="text-gray-400 hover:text-blue-600 transition"
+        <a href="https://facebook.com/sharif9977" class="text-gray-700 hover:text-blue-600 transition"
           aria-label="Facebook Profile"><i class="bi bi-facebook text-xl"></i></a>
-        <a href="https://linkedin.com/in/md-sharif-uddin" class="text-gray-400 hover:text-blue-500 transition"
+        <a href="https://linkedin.com/in/md-sharif-uddin" class="text-gray-700 hover:text-blue-500 transition"
           aria-label="LinkedIn Profile"><i class="bi bi-linkedin text-xl"></i></a>
         <a href="https://github.com/sharifWebDev"
-          class="text-gray-400 hover:text-gray-900 dark:hover:text-white transition" aria-label="GitHub Profile"><i
+          class="text-gray-700 hover:text-gray-900 dark:hover:text-white transition" aria-label="GitHub Profile"><i
             class="bi bi-github text-xl"></i></a>
       </div>
     </div>
   </footer>
 
   <a href="https://wa.me/8801965674161?text=Hi%20Sharif%2C%20I%20found%20you%20on%20your%20portfolio!" target="_blank"
+    aria-label="Chat on WhatsApp"
+    rel="noopener noreferrer"
     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg transition transform hover:scale-110 z-50"
     bis_skin_checked="1">
     <i class="bi bi-whatsapp text-2xl"></i>
