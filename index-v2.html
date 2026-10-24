@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sharif Uddin — Full Stack Software Engineer (Laravel · Vue · Nuxt · DevOps)</title>
+<meta name="description" content="Full Stack Software Engineer in Dhaka with 4+ years building ERP, HRMS, accounting, POS and e-commerce platforms with Laravel, Vue/Nuxt and zero-downtime DevOps.">
+<meta property="og:title" content="Sharif Uddin — Full Stack Software Engineer">
+<meta property="og:description" content="Laravel · Vue · Nuxt · AWS · DigitalOcean. 20+ business systems shipped.">
+<meta property="og:image" content="assets/images/sharif-uddin.jpg">
+<link rel="canonical" href="https://sharifwebdev.github.io/">
+<link rel="icon" href="assets/img/developerSharifLogo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sharif Uddin","jobTitle":"Full Stack Software Engineer","url":"https://sharifwebdev.github.io/","email":"mailto:sharif.webpro@gmail.com","telephone":"+8801965674161","address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"sameAs":["https://github.com/sharifWebDev","https://linkedin.com/in/md-sharif-uddin"],"knowsAbout":["Laravel","PHP","Vue.js","Nuxt.js","Docker","AWS","DigitalOcean"]}</script>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--ink:#0d1526;--mute:#58627a;--line:#dde3ee;--acc:#2a4bd7;--acc-ink:#fff;--soft:#e8edfb;--ok:#0f9d6b;--code:#0d1526;--code-ink:#cfe0ff;--r:14px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0f1c;--surface:#121a2c;--ink:#eaf0ff;--mute:#9aa7c4;--line:#222d47;--acc:#7d98ff;--acc-ink:#0a0f1c;--soft:#18233f;--ok:#3ddc97;--code:#060a14;--code-ink:#cfe0ff}}
+:root[data-theme=dark]{--bg:#0a0f1c;--surface:#121a2c;--ink:#eaf0ff;--mute:#9aa7c4;--line:#222d47;--acc:#7d98ff;--acc-ink:#0a0f1c;--soft:#18233f;--ok:#3ddc97;--code:#060a14;--code-ink:#cfe0ff}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 16.5px/1.65 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.08;letter-spacing:-.02em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:92px 0}
+.sh{display:grid;grid-template-columns:220px 1fr;gap:32px;margin-bottom:40px;align-items:start}
+.sh h2{font-size:clamp(30px,4vw,44px);font-weight:800}.sh p{color:var(--mute);max-width:60ch}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:13px}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 20px;border-radius:10px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);transition:transform .15s,border-color .15s;cursor:pointer;font-size:15px;color:var(--ink)}
+.btn:hover{border-color:var(--acc);transform:translateY(-1px)}
+.btn.p{background:var(--acc);color:var(--acc-ink);border-color:var(--acc)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 20px "Bricolage Grotesque";text-decoration:none}.logo i{color:var(--acc);font-style:normal}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;font-size:14.5px;font-weight:500}
+nav ul a{text-decoration:none;color:var(--mute)}nav ul a:hover{color:var(--ink)}
+.nr{display:flex;gap:10px;align-items:center}
+.ic{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:16px}
+#menu{display:none}
+/* hero */
+.hero{padding:64px 0 40px}
+.hg{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.avail{display:inline-flex;align-items:center;gap:10px;padding:6px 14px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:13.5px;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}}
+h1{font-size:clamp(44px,7vw,84px);font-weight:800;margin-bottom:18px}
+.role{font:700 clamp(20px,2.4vw,28px) "Bricolage Grotesque";color:var(--acc);margin-bottom:18px}
+.lead{color:var(--mute);max-width:56ch;font-size:18px;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.stats{display:grid;grid-template-columns:repeat(4,auto);gap:12px 34px;border-top:1px solid var(--line);padding-top:22px;justify-content:start}
+.stats b{display:block;font:800 30px "Bricolage Grotesque"}.stats span{font-size:13px;color:var(--mute)}
+.term{background:var(--code);color:var(--code-ink);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 60px -24px rgba(20,40,120,.45)}
+.tb{display:flex;align-items:center;gap:7px;padding:12px 16px;border-bottom:1px solid #1d2744}.tb i{width:11px;height:11px;border-radius:50%;background:#2c3b66}.tb span{margin-left:8px;color:#7e8fb8}
+.pf{display:flex;gap:16px;align-items:center;padding:18px 20px;border-bottom:1px solid #1d2744}
+.pf img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid #2c3b66}
+.pf b{font:700 18px "Bricolage Grotesque";color:#fff;display:block}.pf span{color:#8fa0c8;font-size:13.5px}
+#log{padding:18px 20px;min-height:268px;line-height:1.9}
+#log div{display:flex;justify-content:space-between;gap:12px;opacity:0;transform:translateY(4px);transition:.35s}
+#log div.on{opacity:1;transform:none}#log em{font-style:normal;color:#3ddc97}#log .w{color:#ffd479}
+.bar{height:3px;background:#1d2744}.bar i{display:block;height:100%;width:0;background:#3ddc97;transition:width 1s}
+/* marquee-ish tech strip */
+.strip{border-block:1px solid var(--line);background:var(--surface);padding:18px 0;margin-top:40px}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between;color:var(--mute);font-size:14px}
+.strip b{color:var(--ink);font-weight:600}
+/* about */
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{font-size:21px;margin-bottom:10px}.card p,.card li{color:var(--mute)}
+.card ul{padding-left:18px;display:grid;gap:6px}
+.pr{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
+.pr .card{border-top:3px solid var(--acc)}
+/* skills */
+.sk{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sk .card{padding:22px}.sk h3{font-size:18px;display:flex;justify-content:space-between;align-items:baseline}
+.sk h3 small{font:500 12px "IBM Plex Mono";color:var(--mute)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.tags span{font-size:13px;padding:4px 11px;border-radius:7px;background:var(--soft);border:1px solid var(--line)}
+.tags span.x{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:600}
+/* experience */
+.tl{position:relative;display:grid;gap:18px;margin-left:8px}
+.tl:before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.job{position:relative;padding-left:40px}
+.job:before{content:"";position:absolute;left:0;top:30px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.job.now:before{background:var(--acc)}
+.jh{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.job h3{font-size:22px}.job .co{color:var(--acc);font-weight:600}.job .dt{color:var(--mute)}
+.job ul{padding-left:18px;color:var(--mute);display:grid;gap:5px;margin-top:10px}
+/* projects */
+.flt{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.flt button{padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font:500 14px "IBM Plex Sans"}
+.flt button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.pj{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s,transform .2s}
+.pj:hover{border-color:var(--acc);transform:translateY(-3px)}
+.pj .im{aspect-ratio:16/10;background:var(--soft);overflow:hidden;border-bottom:1px solid var(--line)}
+.pj .im img{width:100%;height:100%;object-fit:cover;object-position:top}
+.pj .ph{display:grid;place-items:center;height:100%;font:800 34px "Bricolage Grotesque";color:var(--acc);opacity:.55}
+.pb{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pb h3{font-size:20px}.pb .k{color:var(--mute);font-size:13.5px}.pb p{color:var(--mute);font-size:15px;flex:1}
+.pb .tags{margin-top:4px}.pb .tags span{font-size:12px;padding:3px 9px}
+.pb a{font-weight:600;color:var(--acc);text-decoration:none;font-size:14.5px;margin-top:6px}.pb a:hover{text-decoration:underline}
+.lmw{display:flex;justify-content:center;margin-top:34px}.lmw .btn[hidden]{display:none}
+.more{margin-top:34px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.more div{display:grid;grid-template-columns:200px 1fr 90px;gap:18px;padding:14px 22px;border-bottom:1px solid var(--line);font-size:15px}
+.more div:last-child{border:0}.more b{font-weight:600}.more span{color:var(--mute)}.more em{font-style:normal;text-align:right;color:var(--mute)}
+/* practices */
+.px{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.px .card h3{font-size:19px}
+.pipe{display:flex;gap:0;margin-top:20px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.pipe div{flex:1;padding:18px 16px;border-right:1px solid var(--line);font-size:14px;color:var(--mute)}
+.pipe div:last-child{border:0;background:var(--soft)}.pipe b{display:block;color:var(--ink);font-size:15px;margin-bottom:2px}
+/* oss/edu */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.oss{display:grid;gap:10px;margin-top:14px}.oss div{display:flex;justify-content:space-between;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.oss span{color:var(--mute);font-size:13px}
+.ed{display:grid;gap:16px;margin-top:6px}.ed b{display:block;font-weight:600}.ed span{color:var(--mute);font-size:14.5px}
+/* contact */
+.ct{background:var(--ink);color:var(--bg);border-radius:22px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+.ct h2{font-size:clamp(32px,4.5vw,52px);font-weight:800;margin-bottom:14px}.ct p{opacity:.75;max-width:48ch}
+.ct ul{list-style:none;padding:0;display:grid;gap:12px}
+.ct li a{display:flex;justify-content:space-between;text-decoration:none;padding:14px 18px;border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);border-radius:12px;transition:background .2s}
+.ct li a:hover{background:color-mix(in srgb,var(--bg) 12%,transparent)}.ct li span{opacity:.6;font-size:13.5px}
+footer{padding:30px 0 50px;color:var(--mute);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:960px){.hg,.ag,.two,.ct,.sh{grid-template-columns:1fr}.pg,.px,.pr{grid-template-columns:1fr 1fr}.sk{grid-template-columns:1fr}.pipe{flex-wrap:wrap}.pipe div{flex:1 1 40%}.sh{gap:10px}}
+@media(max-width:680px){section{padding:64px 0}nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--bg);padding:18px 24px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}#menu{display:block}.pg,.px,.pr{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,auto)}.more div{grid-template-columns:1fr;gap:2px}.more em{text-align:left}.ct{padding:32px 24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{header,.flt,#log{display:none}section{padding:24px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Primary">
+<a class="logo" href="#top">sharif<i>.dev</i></a>
+<ul id="nl"><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#work">Work</a></li><li><a href="#practice">How I ship</a></li><li><a href="#contact">Contact</a></li></ul>
+<div class="nr"><button class="ic" id="th" aria-label="Toggle theme">◐</button><button class="ic" id="menu" aria-label="Menu">☰</button><a class="btn p" href="Sharif_Uddin_Full_Stack_Software_Engineer_CV.pdf" download>Download CV</a></div>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hg">
+<div>
+<div class="avail"><span class="dot"></span>Open to senior full-stack roles &amp; contract work</div>
+<h1>Sharif Uddin</h1>
+<p class="role">Full Stack Software Engineer</p>
+<p class="lead">I build and ship the systems businesses run on: accounting, HRMS, inventory, POS and e-commerce. Laravel and Vue/Nuxt on the surface, clean architecture and zero-downtime infrastructure underneath.</p>
+<div class="cta"><a class="btn p" href="#work">See selected work</a><a class="btn" href="#contact">Hire me</a><a class="btn" href="https://github.com/sharifWebDev" target="_blank" rel="noopener">GitHub</a></div>
+<div class="stats"><div><b>4+</b><span>years in production</span></div><div><b>20+</b><span>business systems</span></div><div><b>6</b><span>Packagist packages</span></div><div><b>0s</b><span>deploy downtime</span></div></div>
+</div>
+<div class="term mono" aria-label="Deployment pipeline illustration">
+<div class="tb"><i></i><i></i><i></i><span>github-actions · deploy main</span></div>
+<div class="pf"><img src="assets/images/sharif-uddin.jpg" alt="Portrait of Sharif Uddin" width="64" height="64"><div><b>Sharif Uddin</b><span>Dhaka, Bangladesh · UTC+6</span></div></div>
+<div id="log"></div><div class="bar"><i id="pb"></i></div>
+</div>
+</div>
+<div class="strip"><div class="wrap"><span><b>Clients include</b> United Group · Ratan Group · BSRM · KSRM</span><span><b>Now</b> Software Developer, i-Mesh Limited</span><span><b>Stack</b> Laravel · Vue · Nuxt · Docker · AWS</span></div></div>
+</section>
+
+<section id="about"><div class="wrap">
+<div class="sh"><h2>About</h2><p>A product-minded engineer who owns the work from requirements analysis to production, and keeps it maintainable after launch.</p></div>
+<div class="ag">
+<div class="card"><h3>What I do</h3><p>I design, develop and deploy scalable web and mobile applications, specialising in ERP, HRMS, accounting, CRM, POS and e-commerce. I write to SOLID and Service–Repository patterns so large codebases stay readable, testable and cheap to change.</p></div>
+<div class="card"><h3>Where I add the most value</h3><ul><li>Multi-company systems with RBAC and approval workflows</li><li>Offline-first apps with queued background sync</li><li>Fast, secure REST APIs for web and Flutter clients</li><li>CI/CD and zero-downtime releases on VPS and cloud</li></ul></div>
+</div>
+<div class="pr">
+<div class="card"><h3>Own the full lifecycle</h3><p>SRS and stakeholder analysis, schema design, build, test, deploy, maintain.</p></div>
+<div class="card"><h3>Performance by default</h3><p>Eager loading, indexing, Redis caching and rendering tuning built in, not bolted on.</p></div>
+<div class="card"><h3>Security by default</h3><p>CSRF/XSS/SQL-injection protection, Sanctum/Passport/JWT, policies and audit logs.</p></div>
+</div></div></section>
+
+<section id="skills" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<div class="sh"><h2>Skills</h2><p>Highlighted tags are where I'm strongest day to day.</p></div>
+<div class="sk" id="skg"></div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="sh"><h2>Experience</h2><p>Four teams in four years, each one with more scope and more ownership.</p></div>
+<div class="tl">
+<article class="job now"><div class="jh"><h3>Software Developer <span class="co">· i-Mesh Limited</span></h3><span class="dt mono">Jan 2026 – Present · Motijheel, Dhaka</span></div><ul><li>Architect enterprise systems: accounting, inventory, HRMS, POS, eCommerce and production planning on Laravel, Vue/Nuxt, Pinia and MySQL.</li><li>Build SPA and SSR apps with reusable components, composables and modular Pinia state.</li><li>Run production on AWS, DigitalOcean and Linux VPS with Docker Compose and automated CI/CD.</li><li>Tune queries, caching and front-end rendering; ship secure features with product and design.</li></ul></article>
+<article class="job"><div class="jh"><h3>Full Stack Developer <span class="co">· Webbly Solution</span></h3><span class="dt mono">Jun 2025 – Dec 2025 · Uttara, Dhaka</span></div><ul><li>Delivered full-stack apps with Laravel, Vue.js and MySQL; applied SOLID, MVC and design patterns.</li><li>Built REST APIs, integrated third-party services, supported deployment and performance work.</li></ul></article>
+<article class="job"><div class="jh"><h3>Software Engineer (Web) <span class="co">· Binary Fusion</span></h3><span class="dt mono">Aug 2024 – May 2025 · Merul Badda, Dhaka</span></div><ul><li>Built and maintained Laravel, JavaScript and Filament PHP applications.</li><li>Introduced Service Layer and Repository patterns; optimised modules and shipped new business features.</li></ul></article>
+<article class="job"><div class="jh"><h3>Application Developer <span class="co">· Z IT Solutions Ltd</span></h3><span class="dt mono">Jun 2022 – Jan 2024 · Uttara, Dhaka</span></div><ul><li>Delivered client apps with Laravel and Vue.js, including responsive UIs and performance gains.</li><li>Designed MySQL and MS SQL Server schemas; ran SRS analysis and third-party API integrations across the full SDLC.</li></ul></article>
+</div></div></section>
+
+<section id="work" style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<div class="sh"><h2>Selected work</h2><p>Real systems in production, from logistics and accounting to HR, POS and property CRM.</p></div>
+<div class="flt" id="flt" role="group" aria-label="Filter projects"></div>
+<div class="pg" id="pg"></div>
+<div class="lmw"><button class="btn" id="lm" hidden>Load more projects</button></div>
+</div></section>
+
+<section id="practice"><div class="wrap">
+<div class="sh"><h2>How I ship</h2><p>The engineering habits behind every release.</p></div>
+<div class="px">
+<div class="card"><h3>Architecture</h3><p>Thin controllers, Service Layer for business rules, Repositories for data access. Multi-company tenancy, RBAC and approval workflows designed up front.</p></div>
+<div class="card"><h3>API design</h3><p>Versioned REST, consistent resources and errors, token auth, rate limits, Postman collections and documentation for web and mobile consumers.</p></div>
+<div class="card"><h3>Reliability</h3><p>Queues and scheduling for heavy work, audit logging for traceability, offline-first sync where connectivity is poor.</p></div>
+</div>
+<div class="pipe" aria-label="Release pipeline"><div><b>Commit</b>Git flow, PR review</div><div><b>Build</b>Docker image, Composer, Vite</div><div><b>Test</b>GitHub Actions checks</div><div><b>Migrate</b>Safe, reversible schema changes</div><div><b>Switch</b>Zero-downtime release</div></div>
+</div></section>
+
+<section style="background:var(--surface);border-block:1px solid var(--line)"><div class="wrap">
+<div class="sh"><h2>Open source &amp; education</h2><p>Giving back to the Laravel ecosystem while continuing to study.</p></div>
+<div class="two">
+<div class="card"><h3>Packagist packages</h3><div class="oss"><div>Laravel AI Bridge<span>AI</span></div><div>Smart Search<span>Query</span></div><div>Smart Filter<span>Query</span></div><div>Smart Auto Slug<span>Eloquent</span></div><div>Smart Model Tracker<span>Audit</span></div><div>Image Cropper<span>Media</span></div></div></div>
+<div class="card"><h3>Education</h3><div class="ed"><div><b>B.Sc. in Computer Science &amp; Engineering</b><span>Northern University Bangladesh · Dec 2023 – present</span></div><div><b>Diploma in Computer Technology</b><span>Sherpur Polytechnic Institute · 2017 – 2021</span></div><div><b>Professional Web Development Specialist</b><span>PeopleNTech Institute of IT, Dhaka</span></div><div><b>Languages</b><span>English (fluent) · Bangla (native)</span></div></div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="ct">
+<div><h2>Let's build something dependable.</h2><p>Need a Laravel/Vue engineer who can take a system from requirements to a stable production release? I reply within a day.</p></div>
+<ul>
+<li><a href="mailto:sharif.webpro@gmail.com">sharif.webpro@gmail.com<span>Email</span></a></li>
+<li><a href="https://wa.me/8801965674161?text=Hi%20Sharif%2C%20I%20found%20you%20on%20your%20portfolio!" target="_blank" rel="noopener">+880 1965 674161<span>WhatsApp</span></a></li>
+<li><a href="https://linkedin.com/in/md-sharif-uddin" target="_blank" rel="noopener">md-sharif-uddin<span>LinkedIn</span></a></li>
+<li><a href="https://github.com/sharifWebDev" target="_blank" rel="noopener">sharifWebDev<span>GitHub</span></a></li>
+</ul></div></div></section>
+</main>
+<footer><div class="wrap"><span>© <span id="yr"></span> Sharif Uddin · Motijheel, Dhaka, Bangladesh</span><span>References available upon request</span></div></footer>
+
+<script>
+const $=s=>document.querySelector(s);
+$('#yr').textContent=new Date().getFullYear();
+// theme + menu
+$('#th').onclick=()=>{const d=document.documentElement,cur=d.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');d.dataset.theme=cur==='dark'?'light':'dark'};
+$('#menu').onclick=()=>$('#nl').classList.toggle('open');
+$('#nl').onclick=e=>{if(e.target.tagName==='A')$('#nl').classList.remove('open')};
+// skills
+const S=[["Backend","PHP|Laravel|NestJS|REST API design|Eloquent|Sanctum / Passport / JWT|Queues & Scheduling|Events & Notifications|Policies|Filament PHP|Redis|Laravel AI|PDF / Excel export","PHP|Laravel|REST API design"],
+["Frontend","Vue.js|Nuxt.js (SPA & SSR)|React.js|TypeScript|JavaScript ES6+|Pinia|Tailwind CSS|Bootstrap|jQuery|Axios|PWA","Vue.js|Nuxt.js (SPA & SSR)|Pinia"],
+["Databases","MySQL|PostgreSQL|MS SQL Server|SQLite|Prisma|Schema design|Query optimisation & indexing","MySQL"],
+["Cloud & DevOps","AWS (EC2, S3, IAM)|DigitalOcean|Linux VPS|Docker & Compose|GitHub Actions CI/CD|Nginx / Apache|SSL|PM2|Zero-downtime deploys","Docker & Compose|GitHub Actions CI/CD"],
+["Mobile","Flutter|WebView apps|Mobile API integration|Native PHP desktop apps",""],
+["Architecture","SOLID|MVC|Service Layer & Repository|Design patterns|System design|SRS analysis|RBAC|Multi-company|Approval workflows","SOLID|Service Layer & Repository"],
+["Security & Performance","CSRF / XSS / SQLi protection|Secure APIs|Eager loading|Caching strategies|Rendering tuning",""],
+["Integrations & Real-time","Stripe|PayPal|SSLCommerz|Firebase Cloud Messaging|Webhooks|Laravel Reverb|Pusher|Laravel Echo|WebRTC",""]];
+$('#skg').innerHTML=S.map(([t,l,h])=>{const H=h.split('|');const a=l.split('|');return`<div class="card"><h3>${t}<small>${a.length} items</small></h3><div class="tags">${a.map(x=>`<span${H.includes(x)?' class="x"':''}>${x}</span>`).join('')}</div></div>`}).join('');
+// projects
+const P=[
+["Jetlia Logistics & Transport","Inventory & Accounting + Flutter app · Jun 2026","Unified inventory and accounting for logistics and warehouses with approval workflows, audit logging, analytics and a Flutter app on the same APIs.","Laravel,Vue.js,Pinia,Flutter","Enterprise","assets/portfolio/imesh-inventory/jetlia-inventory.png","https://inventory.imeshltd.com/"],
+["Mesh Ledger","Accounting management · Feb 2026","Multi-company accounting with RBAC, approvals, Firebase push notifications, dashboards and audit trails.","Laravel,Vue.js,Pinia,FCM","Enterprise","assets/portfolio/imesh-banking/banking.png","https://account.imeshltd.com/"],
+["Rain Hill Restaurant","Offline-first POS · 2026","Create, edit and cancel orders offline, queue background sync, and print invoices from local data so service never stops.","Laravel,Vue.js,REST APIs","POS","assets/portfolio/restaurent/restaurants.imeshltd.com_.png","https://restaurants.imeshltd.com/"],
+["United Group HRMS (UGERP)","HR management · 2026","Employee, attendance, payroll and payslips for a cotton spinning mill group, with custom PDF/Excel exports and ID cards.","Laravel,Vue.js,MySQL,VPS","HR","","" ],
+["Ratan Group HRMS","HR management · 2026","V2 of attendance, payroll and HR reports, deployed on DigitalOcean with GitHub Actions and zero-downtime releases.","Laravel,MySQL,DigitalOcean,CI/CD","HR","",""],
+["Proptinize Lead CRM","Real estate CRM · Jun 2025","Booking, fresh and cold-call lead tracking, agent assignment and feedback, plus a property management module and landing page.","Laravel,Vue.js,MySQL","CRM","assets/portfolio/proptinize-lead-crm/admin-dashboard-crm.jpg","https://www.proptinize.com"],
+["UnboundBD","Travel & tour platform · Aug 2025","System architecture, schema and admin workflows for order approval and secure payments on standard and custom tour packages.","Laravel,MySQL,Payments","E-commerce","assets/portfolio/travel-and-tour/tour-font.jpg","https://www.bangladeshunbound.com"],
+["T-Ranz (Australia)","Vehicle rental platform · Aug 2024","Bookings, fleet and customer tracking with automated email templates and a responsive Tailwind UI.","Laravel,Tailwind,MySQL","E-commerce","assets/portfolio/tranz/tranz.png","https://t-ranz.com.au/"],
+["Sodai","POS & inventory · 2026","Retail billing, stock validation, purchasing, customer dues, barcode and shop-wise access control.","Laravel,Vue.js,Pinia","POS","",""],
+["Production Target System","Manufacturing planning · 2026","Target creation, closing and progress tracking with RBAC and geolocation-based login validation.","Laravel,Vue.js,MySQL","Enterprise","",""],
+["Mustard-oil","Inventory & dealer distribution · May 2026","Warehouses, product variants, dealer payments, dashboards and audit logging.","Laravel,Vue.js,Pinia","Enterprise","",""],
+["Ratan Group VMS","Fleet & vehicle management · 2026","Fleet management app with DigitalOcean deployment and ongoing maintenance.","NestJS,Prisma,PostgreSQL,PM2","Enterprise","",""],
+["RCCTLBD","Inventory management · 2026","Raw-material and product-variant workflows, packaging, stock validation, sales, dashboards and reports.","Laravel,Vue.js,Pinia,REST APIs","Enterprise","",""],
+["Millennium Specialized Hospital","Hospital website · 2026","Dynamic hospital website with an admin panel and database-driven content management.","Laravel,MySQL","Website","assets/portfolio/mshlbd/mshlbd.png","https://mshlbd.com/"],
+["Kikinben","E-commerce · 2025","Feature enhancements, bug fixing, server maintenance and production deployments.","PHP,MySQL,Bootstrap","E-commerce","assets/portfolio/kikinben/kikinben.com_.png","https://kikinben.com/"],
+["Secure CRM","Debt settlement · Sep 2024","Debt-settlement and debt-management system with end-to-end business workflows.","Laravel,MySQL","CRM","assets/portfolio/securecrm/secure-crm-square.png",""],
+["Fire Recruitment Australia","e-Learning platform · Oct 2024","Large-dataset reporting with Laravel DOMPDF and Filament PHP admin operations.","Laravel,Filament,DOMPDF","Platform","assets/portfolio/fra/fra.png","https://firerecruitmentaustralia.com.au/"],
+["BooksBD","E-commerce · Mar 2023","Order management, transactions, mPDF report design, SRS and database design.","PHP,MySQL,mPDF","E-commerce","assets/portfolio/booksbd/booksbd.png","https://www.facebook.com/booksbddotnet/"],
+["VMS (BSRM)","Inventory & VAT · Oct 2022","Inventory and VAT core features, MS SQL database design, mPDF reports, API testing and documentation.","PHP,MS SQL,mPDF,REST APIs","Enterprise","",""],
+["SCV","Revenue-management ERP · Jul 2022","Custom ERP with core financial features, housekeeping modules and reports.","PHP,MySQL","Enterprise","",""],
+["Pathedits24","Visualisation & photo editing · Jul 2022","Platform for architectural visualisation and photo-editing workflows with secure bulk uploads, payments and automated delivery.","Laravel,MySQL,Payments","E-commerce","assets/portfolio/pathedits24/pathedits24.com.png","https://pathedits24.com/"],
+["Zayan Tech","Corporate website · Jul 2022","Corporate promotional website.","PHP,Bootstrap","Website","assets/portfolio/zayantech/zayan-tech.com.png","https://www.zayan-tech.com/"]];
+const cats=["All",...new Set(P.map(p=>p[4]))];
+$('#flt').innerHTML=cats.map((c,i)=>`<button aria-pressed="${!i}" data-c="${c}">${c}</button>`).join('');
+let cur='All',lim=9;
+const draw=()=>{const list=P.filter(p=>cur==='All'||p[4]===cur);
+$('#pg').innerHTML=list.slice(0,lim).map(p=>`<article class="pj"><div class="im">${p[5]?`<img loading="lazy" src="${encodeURI(p[5])}" alt="${p[0]} screenshot">`:`<div class="ph">${p[0].split(' ').slice(0,2).map(w=>w[0]).join('')}</div>`}</div><div class="pb"><h3>${p[0]}</h3><div class="k">${p[1]}</div><p>${p[2]}</p><div class="tags">${p[3].split(',').map(t=>`<span>${t}</span>`).join('')}</div>${p[6]?`<a href="${p[6]}" target="_blank" rel="noopener">Visit live site</a>`:''}</div></article>`).join('');
+const r=list.length-lim;$('#lm').hidden=r<=0;$('#lm').textContent=`Load more projects (${r})`};
+$('#flt').onclick=e=>{const b=e.target.closest('button');if(!b)return;document.querySelectorAll('#flt button').forEach(x=>x.setAttribute('aria-pressed',x===b));cur=b.dataset.c;lim=9;draw()};
+$('#lm').onclick=()=>{lim=P.length;draw()};draw();
+// deploy log: the one animated moment
+const L=[["$ git push origin main",""],["Build docker image","<em>ok</em>"],["composer install · vite build","<em>ok</em>"],["Run tests","<em>passed</em>"],["php artisan migrate --force","<em>ok</em>"],["Warm cache · restart queues","<em>ok</em>"],["Switch traffic to new release","<em>0 ms</em>"],["✓ Live on production","<em>zero downtime</em>"]];
+const log=$('#log');log.innerHTML=L.map(l=>`<div><span>${l[0]}</span>${l[1]}</div>`).join('');
+const rows=[...log.children];
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){rows.forEach(r=>r.classList.add('on'));$('#pb').style.width='100%'}
+else rows.forEach((r,i)=>setTimeout(()=>{r.classList.add('on');$('#pb').style.width=((i+1)/rows.length*100)+'%'},500+i*520));
+</script>
+</body>
+</html>
