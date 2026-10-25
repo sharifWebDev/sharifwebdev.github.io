@@ -427,6 +427,24 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollObserver.observe(section);
     });
 
+    const deployLog = document.getElementById("log");
+    const deployProgress = document.getElementById("pb");
+    if (deployLog && deployProgress) {
+        const deployRows = [...deployLog.children];
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            deployRows.forEach(row => row.classList.add("on"));
+            deployProgress.style.width = "100%";
+        } else {
+            deployLog.classList.add("is-animating");
+            deployRows.forEach((row, index) => {
+                window.setTimeout(() => {
+                    row.classList.add("on");
+                    deployProgress.style.width = `${((index + 1) / deployRows.length) * 100}%`;
+                }, 400 + index * 420);
+            });
+        }
+    }
+
     // Portfolio Modal logic
 window.openImage = function(src, title, description) {
     const fullView = document.getElementById("fullView");

@@ -102,8 +102,8 @@
   <main>
     <section class="hero section-shell" id="home">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line"></span> FULL STACK SOFTWARE ENGINEER</div>
         <div class="hero-availability"><span class="availability-dot"></span> Open to senior full-stack roles &amp; contract work</div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> FULL STACK SOFTWARE ENGINEER</div>
         <h1>Engineering digital products for <span>real-world impact.</span></h1>
         <p class="hero-intro">
           I design, build, and ship scalable web and mobile applications — from business-critical systems to
@@ -122,6 +122,15 @@
           <a class="button button-outline" href="https://github.com/sharifWebDev" target="_blank"
             rel="noopener noreferrer">GitHub <i class="bi bi-github" aria-hidden="true"></i></a>
         </div>
+        <div class="hero-additions">
+          <div class="stats" aria-label="Career statistics">
+            <div><b>4+</b><span>years in production</span></div>
+            <div><b>20+</b><span>business systems</span></div>
+            <div><b>6</b><span>Packagist packages</span></div>
+            <div><b>0s</b><span>deploy downtime</span></div>
+          </div>
+        </div>
+
         <div class="hero-socials" aria-label="Social profiles">
           <a href="https://linkedin.com/in/md-sharif-uddin" target="_blank" rel="noopener noreferrer"
             aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
@@ -135,30 +144,47 @@
       </div>
 
       <div class="hero-visual">
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
-        <div class="portrait-frame">
-          <img src="./assets/images/sharif-uddin.jpg" alt="Portrait of Sharif Uddin" width="440" height="520"
-            fetchpriority="high">
+        <div class="hero-art">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
           <div class="portrait-index">SU <span>·</span> 2026</div>
+          <div class="floating-card floating-card-top">
+            <span class="floating-icon"><i class="bi bi-layers" aria-hidden="true"></i></span>
+            <span><strong>Enterprise systems</strong><small>Built to scale</small></span>
+          </div>
+          <div class="floating-card floating-card-bottom">
+            <span class="availability-dot"></span>
+            <span><strong>From idea to production</strong><small>Full lifecycle delivery</small></span>
+          </div>
+          <div class="visual-caption">PHP · Laravel · Vue · Cloud</div>
         </div>
-        <div class="floating-card floating-card-top">
-          <span class="floating-icon"><i class="bi bi-layers" aria-hidden="true"></i></span>
-          <span><strong>Enterprise systems</strong><small>Built to scale</small></span>
+        <div class="term" aria-label="Deployment pipeline illustration">
+          <div class="tb"><i class="dot-1"></i><i class="dot-2"></i><i class="dot-3"></i><span>github-actions · deploy main</span></div>
+          <div class="pf">
+            <img src="./assets/images/sharif-uddin.jpg" alt="Portrait of Sharif Uddin" width="64" height="64">
+            <div><b>Sharif Uddin</b><span>Dhaka, Bangladesh · UTC+6</span></div>
+          </div>
+          <div id="log">
+            <div><span>$ git push origin main</span></div>
+            <div><span>Build docker image</span><em>ok</em></div>
+            <div><span>composer install · vite build</span><em>ok</em></div>
+            <div><span>Run tests</span><em>passed</em></div>
+            <div><span>php artisan migrate --force</span><em>ok</em></div>
+            <div><span>Warm cache · restart queues</span><em>ok</em></div>
+            <div><span>Switch traffic to new release</span><em>0 ms</em></div>
+            <div><span>✓ Live on production</span><em>zero downtime</em></div>
+          </div>
+          <div class="bar"><i id="pb"></i></div>
         </div>
-        <div class="floating-card floating-card-bottom">
-          <span class="availability-dot"></span>
-          <span><strong>From idea to production</strong><small>Full lifecycle delivery</small></span>
-        </div>
-        <div class="visual-caption">PHP · Laravel · Vue · Cloud</div>
       </div>
+
     </section>
 
     <div class="proof-strip" aria-label="Career highlights">
       <div class="proof-inner">
-        <div><strong>4+</strong><span>Years building software</span></div>
-        <div><strong>20+</strong><span>Business applications delivered</span></div>
-        <div><strong>6</strong><span>Open-source Laravel packages</span></div>
+        <div><strong>Clients include</strong><span>United Group · Ratan Group · BSRM · KSRM</span></div>
+        <div><strong>Now</strong><span>Software Developer, i-Mesh Limited</span></div>
+        <div><strong>Stack</strong><span>Laravel · Vue · Nuxt · Docker · AWS</span></div>
         <div class="proof-note"><span class="proof-mark">✳</span><span>From requirements<br>to reliable releases</span></div>
       </div>
     </div>
